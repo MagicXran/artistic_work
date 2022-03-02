@@ -1,0 +1,9 @@
+
+#cmakedefine OPEN_CONSOLE
+
+#define PROJECT_PATH "@MAIN_PATH@"
+// project名 + _ + cmake 自带变量名.
+// 当 CMake 配置此头文件时，@Tutorial_VERSION_MAJOR@ 和 @Tutorial_VERSION_MINOR@ 的值将被替换。
+#define HelloQt_Clion_VERSION_MAJOR @HelloQt_Clion_VERSION_MAJOR@
+#define HelloQt_Clion_VERSION_MINOR @HelloQt_Clion_VERSION_MINOR@
+

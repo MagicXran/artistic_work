@@ -1,0 +1,285 @@
+{
+  "model" : [
+    {
+      "name" : "XS-ZS-22" ,
+      "quantity" : [
+        30 ,
+        20
+      ] ,
+      "pressure" : [
+        75 ,
+        117
+      ] ,
+      "schedule" : 130 ,
+      "time" : 0.5 ,
+      "suo_force" : 250000 ,
+      "max_area" : 90 ,
+      "sphere_radius" : 0 ,
+      "hole_radius" : 0
+    } ,
+    {
+      "name" : "XS-Z-30" ,
+      "quantity" : [
+        30
+      ] ,
+      "pressure" : [
+        119
+      ] ,
+      "schedule" : 130 ,
+      "time" : 0.7 ,
+      "suo_force" : 250000 ,
+      "max_area" : 90 ,
+      "sphere_radius" : 12 ,
+      "hole_radius" : 14
+    } ,
+    {
+      "name" : "XS-Z-60" ,
+      "quantity" : [
+        2.2 ,
+        4
+      ] ,
+      "pressure" : [
+        2 ,
+        2
+      ] ,
+      "schedule" : 22 ,
+      "time" : 0.5 ,
+      "suo_force" : 250000 ,
+      "max_area" : 90 ,
+      "sphere_radius" : 0 ,
+      "hole_radius" : 0
+    } ,
+    {
+      "name" : "XS-ZY-125" ,
+      "quantity" : [
+        2.2 ,
+        4
+      ] ,
+      "pressure" : [
+        2 ,
+        2
+      ] ,
+      "schedule" : 22 ,
+      "time" : 0.5 ,
+      "suo_force" : 250000 ,
+      "max_area" : 90 ,
+      "sphere_radius" : 0 ,
+      "hole_radius" : 0
+    } ,
+    {
+      "name" : "J54-S200/400" ,
+      "quantity" : [
+        2.2 ,
+        4
+      ] ,
+      "pressure" : [
+        2 ,
+        2
+      ] ,
+      "schedule" : 22 ,
+      "time" : 0.5 ,
+      "suo_force" : 250000 ,
+      "max_area" : 90 ,
+      "sphere_radius" : 0 ,
+      "hole_radius" : 0
+    } ,
+    {
+      "name" : "XS-ZY-250" ,
+      "quantity" : [
+        2.2 ,
+        4
+      ] ,
+      "pressure" : [
+        2 ,
+        2
+      ] ,
+      "schedule" : 22 ,
+      "time" : 0.5 ,
+      "suo_force" : 250000 ,
+      "max_area" : 90 ,
+      "sphere_radius" : 0 ,
+      "hole_radius" : 0
+    } ,
+    {
+      "name" : "XZY-300" ,
+      "quantity" : [
+        2.2 ,
+        4
+      ] ,
+      "pressure" : [
+        2 ,
+        2
+      ] ,
+      "schedule" : 22 ,
+      "time" : 0.5 ,
+      "suo_force" : 250000 ,
+      "max_area" : 90 ,
+      "sphere_radius" : 0 ,
+      "hole_radius" : 0
+    } ,
+    {
+      "name" : "XS-ZY-500" ,
+      "quantity" : [
+        2.2 ,
+        4
+      ] ,
+      "pressure" : [
+        2 ,
+        2
+      ] ,
+      "schedule" : 22 ,
+      "time" : 0.5 ,
+      "suo_force" : 250000 ,
+      "max_area" : 90 ,
+      "sphere_radius" : 0 ,
+      "hole_radius" : 0
+    } ,
+    {
+      "name" : "XS-ZY-1000" ,
+      "quantity" : [
+        2.2 ,
+        4
+      ] ,
+      "pressure" : [
+        2 ,
+        2
+      ] ,
+      "schedule" : 22 ,
+      "time" : 0.5 ,
+      "suo_force" : 250000 ,
+      "max_area" : 90 ,
+      "sphere_radius" : 0 ,
+      "hole_radius" : 0
+    } ,
+    {
+      "name" : "XS-ZY-2000" ,
+      "quantity" : [
+        2.2 ,
+        4
+      ] ,
+      "pressure" : [
+        2 ,
+        2
+      ] ,
+      "schedule" : 22 ,
+      "time" : 0.5 ,
+      "suo_force" : 250000 ,
+      "max_area" : 90 ,
+      "sphere_radius" : 0 ,
+      "hole_radius" : 0
+    } ,
+    {
+      "name" : "XZY-2000" ,
+      "quantity" : [
+        2.2 ,
+        4
+      ] ,
+      "pressure" : [
+        2 ,
+        2
+      ] ,
+      "schedule" : 22 ,
+      "time" : 0.5 ,
+      "suo_force" : 250000 ,
+      "max_area" : 90 ,
+      "sphere_radius" : 0 ,
+      "hole_radius" : 0
+    } ,
+    {
+      "name" : "XZY-3000" ,
+      "quantity" : [
+        2.2 ,
+        4
+      ] ,
+      "pressure" : [
+        2 ,
+        2
+      ] ,
+      "schedule" : 22 ,
+      "time" : 0.5 ,
+      "suo_force" : 250000 ,
+      "max_area" : 90 ,
+      "sphere_radius" : 0 ,
+      "hole_radius" : 0
+    } ,
+    {
+      "name" : "XS-ZY-4000" ,
+      "quantity" : [
+        2.2 ,
+        4
+      ] ,
+      "pressure" : [
+        2 ,
+        2
+      ] ,
+      "schedule" : 22 ,
+      "time" : 0.5 ,
+      "suo_force" : 250000 ,
+      "max_area" : 90 ,
+      "sphere_radius" : 0 ,
+      "hole_radius" : 0
+    } ,
+    {
+      "name" : "XS-ZY-6000" ,
+      "quantity" : [
+        2.2 ,
+        4
+      ] ,
+      "pressure" : [
+        2 ,
+        2
+      ] ,
+      "schedule" : 22 ,
+      "time" : 0.5 ,
+      "suo_force" : 250000 ,
+      "max_area" : 90 ,
+      "sphere_radius" : 0 ,
+      "hole_radius" : 0
+    } ,
+    {
+      "name" : "T-S-Z-7000" ,
+      "quantity" : [
+        2.2 ,
+        4
+      ] ,
+      "pressure" : [
+        2 ,
+        2
+      ] ,
+      "schedule" : 22 ,
+      "time" : 0.5 ,
+      "suo_force" : 250000 ,
+      "max_area" : 90 ,
+      "sphere_radius" : 0 ,
+      "hole_radius" : 0
+    } ,
+    {
+      "name" : "XS-ZY-32000" ,
+      "quantity" : [
+        2.2 ,
+        4
+      ] ,
+      "pressure" : [
+        2 ,
+        2
+      ] ,
+      "schedule" : 22 ,
+      "time" : 0.5 ,
+      "suo_force" : 250000 ,
+      "max_area" : 90 ,
+      "sphere_radius" : 0 ,
+      "hole_radius" : 0
+    }
+  ] ,
+  "formula" : [
+    "直接浇口:d = d1+(0.5~1.0)mm" ,
+    "盘形浇口:h = 0.7*n*t" ,
+    "环形浇口:h = 0.7*n*t" ,
+    "点浇口: d = n*k*¼√A" ,
+    "侧浇口:h=n*t ; b=(n*√A)/30" ,
+    "薄片侧浇口:d=d1+(0.5~1.0)mm" ,
+    "扇形侧浇口:d=d1+(0.5~1.0)mm" ,
+    "潜伏式浇口:d=d1+(0.5~1.0)mm" ,
+    "护耳形浇口:d=d1+(0.5~1.0)mm"
+  ]
+}

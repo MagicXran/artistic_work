@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="/">
+    <file>res/inject_table.png</file>
+    <file>res/icons8-robot-50.ico</file>
+    <file>res/Injection_machine_meter.json</file>
+  </qresource>
+</RCC>

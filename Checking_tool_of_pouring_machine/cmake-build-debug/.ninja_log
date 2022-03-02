@@ -1,0 +1,25 @@
+# ninja log v5
+49	630	6679298141186045	CMakeFiles/HelloQt_Clion.dir/calibrationparameters.cc.obj	3fde26e1c04b4458
+45	158	6679312936631171	C:/Projects/Qt/HelloQt_Clion/cmake-build-debug/HelloQt_Clion_autogen/EWIEGA46WW/qrc_res.cpp	35ee4e7e0540c599
+6	45	0	CMakeFiles/HelloQt_Clion_autogen	5e9b36ce4b40dc3
+6	45	0	C:/Projects/Qt/HelloQt_Clion/cmake-build-debug/HelloQt_Clion_autogen/mocs_compilation.cpp	5e9b36ce4b40dc3
+165	2127	6679308073634170	CMakeFiles/HelloQt_Clion.dir/HelloQt_Clion_autogen/mocs_compilation.cpp.obj	d16a8f6c74ef3e5
+6	45	0	HelloQt_Clion_autogen/mocs_compilation.cpp	5e9b36ce4b40dc3
+167	2256	6679308074889668	CMakeFiles/HelloQt_Clion.dir/main.cpp.obj	18381a65b9a160ef
+45	158	6679312936631171	HelloQt_Clion_autogen/EWIEGA46WW/qrc_res.cpp	35ee4e7e0540c599
+158	2048	6679312955554443	CMakeFiles/HelloQt_Clion.dir/HelloQt_Clion_autogen/EWIEGA46WW/qrc_res.cpp.obj	b9236454a4e478d7
+46	2282	6679313377092518	CMakeFiles/HelloQt_Clion.dir/mainwindow.cpp.obj	6c1f5411b849c0f6
+2282	2879	6679313383044376	HelloQt_Clion.exe	5d3518941926bf0b
+1	327	6679320587183631	build.ninja	125f58c1a91cd631
+6	393	0	CMakeFiles/HelloQt_Clion_autogen	ffd1c067cb79666d
+6	393	0	HelloQt_Clion_autogen/mocs_compilation.cpp	ffd1c067cb79666d
+6	393	0	C:/Projects/artistic_work/Checking_tool_of_pouring_machine/cmake-build-debug/CMakeFiles/HelloQt_Clion_autogen	ffd1c067cb79666d
+6	393	0	C:/Projects/artistic_work/Checking_tool_of_pouring_machine/cmake-build-debug/HelloQt_Clion_autogen/mocs_compilation.cpp	ffd1c067cb79666d
+394	502	6679320777132536	HelloQt_Clion_autogen/EWIEGA46WW/qrc_res.cpp	21b6d9fb03631c85
+394	502	6679320777132536	C:/Projects/artistic_work/Checking_tool_of_pouring_machine/cmake-build-debug/HelloQt_Clion_autogen/EWIEGA46WW/qrc_res.cpp	21b6d9fb03631c85
+507	1019	6679320782446719	CMakeFiles/HelloQt_Clion.dir/calibrationparameters.cc.obj	76345dfc04fb32a2
+505	2381	6679320796058170	CMakeFiles/HelloQt_Clion.dir/HelloQt_Clion_autogen/mocs_compilation.cpp.obj	d23594a1df396521
+502	2518	6679320797464414	CMakeFiles/HelloQt_Clion.dir/main.cpp.obj	32ab17735703e1df
+512	3102	6679320803254637	CMakeFiles/HelloQt_Clion.dir/HelloQt_Clion_autogen/EWIEGA46WW/qrc_res.cpp.obj	ae7ba682b1d3f6ed
+509	3266	6679320804817391	CMakeFiles/HelloQt_Clion.dir/mainwindow.cpp.obj	5ff7b8dcb354f60
+3266	3869	6679320810766625	HelloQt_Clion.exe	382353d89d74452f

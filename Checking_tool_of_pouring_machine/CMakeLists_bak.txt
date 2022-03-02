@@ -1,0 +1,49 @@
+cmake_minimum_required(VERSION 3.21)
+project(HelloQt_Clion)
+set(CMAKE_CXX_STANDARD 14)
+#set(CMAKE_CXX_STANDARD 11)
+
+
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+
+set(MAIN_PATH ${PROJECT_SOURCE_DIR})
+
+#当前工程目录
+message(${HelloQt_Clion_SOURCE_DIR})
+configure_file(
+        "${HelloQt_Clion_SOURCE_DIR}/HellQt_Clion.h.in"
+         "${HelloQt_Clion_SOURCE_DIR}/HellQt_Clion.h"
+        )
+
+################################################## qt 配置
+# 自动调用moc，uic，rcc处理qt的扩展部分
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTORCC ON)
+
+set(CMAKE_PREFIX_PATH C:/Qt/Qt5.14.2/5.14.2/mingw73_64) #这里需要填入自己安装的路径
+find_package(Qt5Widgets)
+find_package( Qt5Core)
+find_package( Qt5Gui)
+
+set(UI_FILES)
+
+set(RC_FILES)
+
+set(QRC_FILES res.qrc)
+
+##################################################
+
+set(SOURCE_FILES main.cpp mainwindow.cpp mainwindow.h)
+message( "${PROJECT_SOURCE_DIR}")
+
+################################################## boost
+
+
+add_executable(HelloQt_Clion WIN32 ${RC_FILES} ${SOURCE_FILES} ${UI_FILES} ${QRC_FILES})
+#必须跟上面find_packge中添加的模块名称一致哦。
+target_link_libraries(HelloQt_Clion Qt5::Widgets)
+
+
+# 把对应Qt模块的库链接进程序
+qt5_use_modules(HelloQt_Clion Core Widgets Gui)
