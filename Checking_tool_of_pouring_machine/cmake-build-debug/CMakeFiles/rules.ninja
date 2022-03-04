@@ -42,7 +42,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = C:\Users\Administrator\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.5744.254\bin\cmake\win\bin\cmake.exe --regenerate-during-build -SC:\Projects\artistic_work\Checking_tool_of_pouring_machine -BC:\Projects\artistic_work\Checking_tool_of_pouring_machine\cmake-build-debug
+  command = C:\Users\Administrator\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\bin\cmake.exe --regenerate-during-build -SC:\Projects\artistic_work\Checking_tool_of_pouring_machine -BC:\Projects\artistic_work\Checking_tool_of_pouring_machine\cmake-build-debug
   description = Re-running CMake...
   generator = 1
 
@@ -51,7 +51,7 @@ rule RERUN_CMAKE
 # Rule for cleaning additional files.
 
 rule CLEAN_ADDITIONAL
-  command = C:\Users\Administrator\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.5744.254\bin\cmake\win\bin\cmake.exe -DCONFIG=$CONFIG -P CMakeFiles\clean_additional.cmake
+  command = C:\Users\Administrator\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\bin\cmake.exe -DCONFIG=$CONFIG -P CMakeFiles\clean_additional.cmake
   description = Cleaning additional files...
 
 
@@ -59,7 +59,7 @@ rule CLEAN_ADDITIONAL
 # Rule for cleaning all built files.
 
 rule CLEAN
-  command = C:\Users\Administrator\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.5744.254\bin\ninja\win\ninja.exe $FILE_ARG -t clean $TARGETS
+  command = C:\Users\Administrator\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\ninja\win\ninja.exe $FILE_ARG -t clean $TARGETS
   description = Cleaning all built files...
 
 
@@ -67,6 +67,6 @@ rule CLEAN
 # Rule for printing all primary targets available.
 
 rule HELP
-  command = C:\Users\Administrator\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.5744.254\bin\ninja\win\ninja.exe -t targets
+  command = C:\Users\Administrator\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\ninja\win\ninja.exe -t targets
   description = All primary targets available:
 

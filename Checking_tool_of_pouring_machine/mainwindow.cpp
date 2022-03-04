@@ -42,7 +42,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) , ui(new Ui::MainW
             QString("<a href='file:").append(PROJECT_PATH).append("/res/inject_table.png'>注射机型号于技术参数表"));
     ui->tbl2->setText(QString("<a href='file:").append(PROJECT_PATH).append("/res/p0.jpg'>部分塑料所需要的注射压力P0表"));
     ui->tbl3->setText(QString("<a href='file:").append(PROJECT_PATH).append("/res/p_mo.jpg'>常用塑料注射时,型腔内平均压力表表"));
-    ui->tbl4->setText(QString("<a href='file:").append(PROJECT_PATH).append("/res/inject_table.png'>注射机型号于技术参数表"));
+    ui->tbl4->setText(QString("<a href='file:").append(PROJECT_PATH).append("/res/area.jpg'>分流道的横截面尺寸表"));
     ui->tbl5->setText(QString("<a href='file:").append(PROJECT_PATH).append("/res/inject_table.png'>注射机型号于技术参数表"));
     ui->tbl6->setText(QString("<a href='file:").append(PROJECT_PATH).append("/res/inject_table.png'>注射机型号于技术参数表"));
     ui->tbl7->setText(QString("<a href='file:").append(PROJECT_PATH).append("/res/inject_table.png'>注射机型号于技术参数表"));
@@ -90,8 +90,39 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) , ui(new Ui::MainW
             ui->text_log->append("<span style=color:'red'> 实际注射压力 ＞ 标准公称压力! </span>");
         } else
             ui->text_log->append("<span style=color:'green'> 实际注射压力 ＜  标准公称压力! </span>");
+    });
+
+    //浇注系统计算
+    connect(ui->btn_calc_gating_system , &QPushButton::clicked , [=]() {
+        ui->text_log->append("<span style=color:'green'> 浇注系统计算 </span>");
+
+        calc_->setMainL(ui->text_main_L->text().toDouble());
+        calc_->setSubL(ui->text_sub_L->text().toDouble());
+        calc_->setSubA(ui->text_sub_area->text().toDouble());
+
+        ui->text_log->append("<span style=color:'green'> 已选择 </span>");
+
+        double main_Rn = calc_->calc_main_Rn();
+        ui->text_main_radius->setText(QString::number(main_Rn));
+
+        auto hole = parser_->getModel(ui->comboBox_machine->currentIndex() + 1)["hole_radius"].asDouble();
+        ui->text_log->append(
+                "<span style=color:'green'> 主流道小端半径: </span>" + QString::number(calc_->calc_main_r(hole)));
 
 
+        ui->text_log->append(
+                "<span style=color:'green'> 主流道大端半径: </span>" + QString::number(calc_->calc_main_R()));
+
+        auto sphere = parser_->getModel(ui->comboBox_machine->currentIndex() + 1)["sphere_radius"].asDouble();
+        ui->text_log->append("<span style=color:'green'> 主流道球面半径: </span>" +
+                             QString::number(calc_->calc_main_SR(sphere)));
+
+        ui->text_log->append(
+                "<span style=color:'green'> 球面的配合高度: </span>" + QString::number(calc_->calc_main_h()));
+
+        ui->text_main_volume->setText(QString::number(calc_->calc_main_v()));
+        ui->text_sub_volume->setText(QString::number(calc_->calc_subV()));
+        ui->text_sub_size->setText(QString::number(calc_->calc_subD()));
     });
 
 
@@ -111,6 +142,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) , ui(new Ui::MainW
         else
             ui->text_log->append("<span style=color:'red'> 实际锁模力 ＞ 标准锁模力! </span>");
 
+        ui->text_f_grow->setText(QString::number(act_suo));
 
     });
 
@@ -146,3 +178,4 @@ bool MainWindow::eventFilter(QObject *target , QEvent *e) {
     std::cout << e->type() << std::endl;
     return QObject::eventFilter(target , e);
 }
+

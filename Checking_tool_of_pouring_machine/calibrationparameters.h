@@ -15,13 +15,60 @@ extern const NUMBER_TYPE rho;
 extern const NUMBER_TYPE v_main_factor;
 extern const NUMBER_TYPE k1_factor;
 extern const NUMBER_TYPE k2_factor;
+extern const NUMBER_TYPE r_factor;  //0.5~1
+extern const NUMBER_TYPE SR_factor;  //1~2
+extern const NUMBER_TYPE h_factor;  //1~2
+extern const NUMBER_TYPE alfa_factor;  //2~4
+extern const NUMBER_TYPE sub_factor;
 
 
 class calibration_parameters : public std::enable_shared_from_this<calibration_parameters> {
 
 private:
     NUMBER_TYPE v_su_ {}  /** 输入的v塑 **/  , v_main_ {} /** 计算的v总 **/ ;
-    NUMBER_TYPE m_su_ {} , suo_force_ {} , a_su_ {} , p0_ {} , n_ {} , f_zhang_ {} , p_mo{};
+    NUMBER_TYPE m_su_ {} , suo_force_ {} , a_su_ {} , p0_ {} , n_ {} , f_zhang_ {} , p_mo {};
+    NUMBER_TYPE main_l_ {} , main_r_ {} , main_R_ {} , main_sr_ {} , main_h_ {} , main_v_ {} , main_Rn_ {} , sub_l_ {} , sub_A_ {} , sub_v_ {};
+public:
+    double getMainL() const;
+
+    void setMainL(double mainL);
+
+    double getMainR() const;
+
+    void setMainR(double mainR);
+
+    double getMainr() const;
+
+    void setMainr(double mainR);
+
+    double getMainSr() const;
+
+    void setMainSr(double mainSr);
+
+    double getMainH() const;
+
+    void setMainH(double mainH);
+
+    double getMainV() const;
+
+    void setMainV(double mainV);
+
+    double getMainRn() const;
+
+    void setMainRn(double mainRn);
+
+    double getSubL() const;
+
+    void setSubL(double subL);
+
+    double getSubA() const;
+
+    void setSubA(double subA);
+
+    double getSubV() const;
+
+    void setSubV(double subV);
+
 public:
     NUMBER_TYPE getFZhang() const;
 
@@ -75,6 +122,22 @@ public:
     CALC_TYPE calc_m_suo(NUMBER_TYPE v_suo);
 
     CALC_TYPE calc_v_main();
+
+    CALC_TYPE calc_main_r(NUMBER_TYPE hole_size);
+
+    CALC_TYPE calc_main_R();
+
+    CALC_TYPE calc_main_SR(NUMBER_TYPE sphere_size);
+
+    CALC_TYPE calc_main_h();
+
+    CALC_TYPE calc_main_v();
+
+    CALC_TYPE calc_main_Rn();
+
+    CALC_TYPE calc_subD();
+
+    CALC_TYPE calc_subV();
 
     /**
      *  设置注射机型号

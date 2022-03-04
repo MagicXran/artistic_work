@@ -3,32 +3,12 @@
 
 #include "mainwindow.h"
 #include <QApplication>
+#include <cmath>
 #include "HellQt_Clion.h"
 
 #if DEBUG == 1
 
-
 void test() {
-    using namespace std;
-    std::cout << "test" << std::endl;
-
-
-    std::shared_ptr<common_tools::ParseJson> parser_ = std::make_shared<common_tools::ParseJson>();
-    if (parser_->Open(JSON_PATH)) {
-        for (const auto &var : parser_->getJsonValuesFromArray("pressure")) {
-//            std::cout << var << std::endl;
-        }
-
-        std::cout << parser_->getRoot(0)["pressure"];
-
-        common_tools::ParseJson par;
-        if (par.Open(JSON_PATH)) {
-//            std::cout <<  << std::endl;;
-//            std::cout << par.getModel()[0]["name"];
-//            std::cout << par[0]["pressure"];
-        }
-    }
-
 
 }
 
