@@ -80,13 +80,14 @@ public:
     QGridLayout *gridLayout_10;
     QLineEdit *text_l;
     QLineEdit *text_theta_m;
-    QLineEdit *text_cool_time_6;
+    QLineEdit *text_X;
     QLineEdit *text_area;
     QGridLayout *gridLayout_4;
     QVBoxLayout *verticalLayout;
     QLineEdit *text_theta_1;
     QLineEdit *text_theta_2;
     QLineEdit *text_rho;
+    QLineEdit *text_v;
     QLineEdit *text_traffic;
     QGridLayout *gridLayout_3;
     QLineEdit *text_time;
@@ -418,13 +419,13 @@ public:
 
         gridLayout_10->addWidget(text_theta_m, 0, 1, 1, 1);
 
-        text_cool_time_6 = new QLineEdit(groupBox_4);
-        text_cool_time_6->setObjectName(QString::fromUtf8("text_cool_time_6"));
-        sizePolicy.setHeightForWidth(text_cool_time_6->sizePolicy().hasHeightForWidth());
-        text_cool_time_6->setSizePolicy(sizePolicy);
-        text_cool_time_6->setReadOnly(true);
+        text_X = new QLineEdit(groupBox_4);
+        text_X->setObjectName(QString::fromUtf8("text_X"));
+        sizePolicy.setHeightForWidth(text_X->sizePolicy().hasHeightForWidth());
+        text_X->setSizePolicy(sizePolicy);
+        text_X->setReadOnly(true);
 
-        gridLayout_10->addWidget(text_cool_time_6, 1, 0, 1, 1);
+        gridLayout_10->addWidget(text_X, 1, 0, 1, 1);
 
         text_area = new QLineEdit(groupBox_4);
         text_area->setObjectName(QString::fromUtf8("text_area"));
@@ -466,6 +467,13 @@ public:
         text_rho->setSizePolicy(sizePolicy);
 
         verticalLayout->addWidget(text_rho);
+
+        text_v = new QLineEdit(groupBox_4);
+        text_v->setObjectName(QString::fromUtf8("text_v"));
+        sizePolicy.setHeightForWidth(text_v->sizePolicy().hasHeightForWidth());
+        text_v->setSizePolicy(sizePolicy);
+
+        verticalLayout->addWidget(text_v);
 
         text_traffic = new QLineEdit(groupBox_4);
         text_traffic->setObjectName(QString::fromUtf8("text_traffic"));
@@ -554,6 +562,7 @@ public:
         text_dia->setObjectName(QString::fromUtf8("text_dia"));
         sizePolicy.setHeightForWidth(text_dia->sizePolicy().hasHeightForWidth());
         text_dia->setSizePolicy(sizePolicy);
+        text_dia->setToolTipDuration(2);
         splitter->addWidget(text_dia);
         tbl8 = new QLabel(splitter);
         tbl8->setObjectName(QString::fromUtf8("tbl8"));
@@ -713,8 +722,8 @@ public:
         text_l->setPlaceholderText(QCoreApplication::translate("MainWindow", "\350\257\267\350\276\223\345\205\245\345\260\217l", nullptr));
         text_theta_m->setText(QString());
         text_theta_m->setPlaceholderText(QCoreApplication::translate("MainWindow", "\350\257\267\350\276\223\345\205\245\316\270_m", nullptr));
-        text_cool_time_6->setText(QString());
-        text_cool_time_6->setPlaceholderText(QCoreApplication::translate("MainWindow", "\347\256\241\351\201\223\346\225\260\347\233\256", nullptr));
+        text_X->setText(QString());
+        text_X->setPlaceholderText(QCoreApplication::translate("MainWindow", "\347\256\241\351\201\223\346\225\260\347\233\256", nullptr));
         text_area->setText(QString());
         text_area->setPlaceholderText(QCoreApplication::translate("MainWindow", "\344\274\240\347\203\255\346\200\273\351\235\242\347\247\257", nullptr));
         text_theta_1->setText(QString());
@@ -722,7 +731,9 @@ public:
         text_theta_2->setText(QString());
         text_theta_2->setPlaceholderText(QCoreApplication::translate("MainWindow", "\350\257\267\350\276\223\345\205\245\316\2702", nullptr));
         text_rho->setText(QString());
-        text_rho->setPlaceholderText(QCoreApplication::translate("MainWindow", "\350\257\267\350\276\223\345\205\245\317\201c", nullptr));
+        text_rho->setPlaceholderText(QCoreApplication::translate("MainWindow", "\350\257\267\350\276\223\345\205\245\317\201", nullptr));
+        text_v->setText(QString());
+        text_v->setPlaceholderText(QCoreApplication::translate("MainWindow", "\350\257\267\350\276\223\345\205\245v", nullptr));
         text_traffic->setText(QString());
         text_traffic->setPlaceholderText(QCoreApplication::translate("MainWindow", "\345\206\267\345\215\264\346\260\264\347\232\204\344\275\223\347\247\257\346\265\201\351\207\217", nullptr));
         text_time->setText(QString());
@@ -732,12 +743,15 @@ public:
         tbl6->setText(QCoreApplication::translate("MainWindow", "\345\270\270\347\224\250\345\241\221\346\226\231\345\243\201\345\216\232\344\270\216\345\206\267\345\215\264\346\227\266\351\227\264\350\241\250", nullptr));
         text_f->setText(QString());
         text_f->setPlaceholderText(QCoreApplication::translate("MainWindow", "\350\257\267\346\237\245\350\241\250\350\276\223\345\205\245f", nullptr));
-        tbl7->setText(QCoreApplication::translate("MainWindow", "f_tbl", nullptr));
+        tbl7->setText(QCoreApplication::translate("MainWindow", "\346\260\264\346\270\251\344\270\216f", nullptr));
         text_factor->setText(QString());
         text_factor->setPlaceholderText(QCoreApplication::translate("MainWindow", "\350\206\234\344\274\240\347\203\255\347\263\273\346\225\260", nullptr));
+#if QT_CONFIG(tooltip)
+        text_dia->setToolTip(QCoreApplication::translate("MainWindow", "\350\257\267\346\237\245\350\241\250\350\276\223\345\205\245\345\206\267\345\215\264\346\260\264\351\201\223\347\233\264\345\276\204", nullptr));
+#endif // QT_CONFIG(tooltip)
         text_dia->setText(QString());
         text_dia->setPlaceholderText(QCoreApplication::translate("MainWindow", "\350\257\267\346\237\245\350\241\250\350\276\223\345\205\245\345\206\267\345\215\264\346\260\264\351\201\223\347\233\264\345\276\204", nullptr));
-        tbl8->setText(QCoreApplication::translate("MainWindow", "Table", nullptr));
+        tbl8->setText(QCoreApplication::translate("MainWindow", "\345\206\267\345\215\264\346\260\264\347\250\263\345\256\232\346\271\215\346\265\201\351\200\237\345\272\246\344\270\216\346\265\201\351\207\217", nullptr));
         text_flow_rate->setText(QString());
         text_flow_rate->setPlaceholderText(QCoreApplication::translate("MainWindow", "\345\206\267\345\215\264\346\260\264\345\234\250\347\256\241\345\206\205\347\232\204\346\265\201\351\200\237", nullptr));
         btn_calc_cool_system->setText(QCoreApplication::translate("MainWindow", "\350\256\241\347\256\227", nullptr));

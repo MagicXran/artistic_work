@@ -19,6 +19,7 @@ extern const NUMBER_TYPE SR_factor = 1.5;  //1~2
 extern const NUMBER_TYPE h_factor = 0.386;  //0.3333 ~ 0.4
 extern const NUMBER_TYPE alfa_factor = 3;  //2~4
 extern const NUMBER_TYPE sub_factor = 0.2654;
+extern const NUMBER_TYPE time_tuo = 8;
 
 CALC_TYPE calibration_parameters::calc_m_suo(NUMBER_TYPE v_suo) {
     setVSu(v_suo);
@@ -231,5 +232,52 @@ CALC_TYPE calibration_parameters::calc_subD() {
 CALC_TYPE calibration_parameters::calc_subV() {
     setSubV(sub_l_ * sub_A_);
     return sub_v_;
+}
+
+double calibration_parameters::calc_N() {
+    return (3600 / t_);
+}
+
+double calibration_parameters::calc_t(NUMBER_TYPE t_cool , NUMBER_TYPE t_tbl) {
+    t_ = t_cool + time_tuo + t_tbl;
+    return t_;
+}
+
+double calibration_parameters::calc_V() {
+    v_ = v_main_ + sub_v_ + n_ * v_su_;
+    return v_;
+}
+
+double calibration_parameters::calc_W(double N) {
+    w_ = N * m_su_;
+    return w_;
+}
+
+double calibration_parameters::calc_Qv(NUMBER_TYPE qs , double theta1 , double theta2 , double rhoc) {
+    theta1_ = theta1;
+    theta2_ = theta2;
+    rhoc_ = rhoc;
+
+    qv_ = (w_ * qs) / (60 * rhoc_ * (theta1_ - theta2_));
+    return qv_;
+}
+
+double calibration_parameters::calc_Speed(NUMBER_TYPE d) {
+    d_ = d;
+    return (4 * qv_) / (60 * 3.1415 * pow(d , 2));
+}
+
+double calibration_parameters::calc_H(double f , double v) {
+    h_ = 4.187 * f * pow(rhoc_ * v , 0.8);
+    return h_;
+}
+
+double calibration_parameters::calc_A(double thetam) {
+    A_ = (w_ * qs_) / (h_ * (thetam - (theta1_ + theta2_) / 2));
+    return A_;
+}
+
+double calibration_parameters::calc_X(double l) {
+    return (A_ / 3.1415 * d_) / l;
 }
 

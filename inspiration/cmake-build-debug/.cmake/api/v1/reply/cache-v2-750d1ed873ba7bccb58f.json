@@ -98,6 +98,70 @@
 			"value" : "C:/boost_1_69_0/stage/lib"
 		},
 		{
+			"name" : "Boost_PYTHON39_LIBRARY_DEBUG",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Boost python39 library (debug)"
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "C:/boost_1_69_0/stage/lib/libboost_python39-mgw73-mt-d-1_69.a"
+		},
+		{
+			"name" : "Boost_PYTHON39_LIBRARY_RELEASE",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Boost python39 library (release)"
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "C:/boost_1_69_0/stage/lib/libboost_python39-mgw73-mt-1_69.a"
+		},
+		{
+			"name" : "Boost_PYTHON_LIBRARY_DEBUG",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Boost python library (debug)"
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "Boost_PYTHON_LIBRARY_DEBUG-NOTFOUND"
+		},
+		{
+			"name" : "Boost_PYTHON_LIBRARY_RELEASE",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Boost python library (release)"
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "Boost_PYTHON_LIBRARY_RELEASE-NOTFOUND"
+		},
+		{
 			"name" : "Boost_REGEX_LIBRARY_DEBUG",
 			"properties" : 
 			[
@@ -215,7 +279,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Projects/artistic_work/Checking_tool_of_pouring_machine/cmake-build-debug"
+			"value" : "c:/Projects/artistic_work/inspiration/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -783,7 +847,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Projects/artistic_work/Checking_tool_of_pouring_machine"
+			"value" : "C:/Projects/artistic_work/inspiration"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -795,7 +859,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/HelloQt_Clion"
+			"value" : "C:/Program Files (x86)/inspiration"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -1011,67 +1075,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "HelloQt_Clion"
-		},
-		{
-			"name" : "CMAKE_PROJECT_VERSION",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "6.6"
-		},
-		{
-			"name" : "CMAKE_PROJECT_VERSION_MAJOR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "6"
-		},
-		{
-			"name" : "CMAKE_PROJECT_VERSION_MINOR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "6"
-		},
-		{
-			"name" : "CMAKE_PROJECT_VERSION_PATCH",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : ""
-		},
-		{
-			"name" : "CMAKE_PROJECT_VERSION_TWEAK",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : ""
+			"value" : "inspiration"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1459,43 +1463,19 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[C:/boost_1_69_0][cfound components: date_time regex system ][v1.69.0()]"
+			"value" : "[C:/boost_1_69_0][cfound components: date_time regex system python39 ][v1.69.0()]"
 		},
 		{
-			"name" : "HelloQt_Clion_BINARY_DIR",
+			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Python3",
 			"properties" : 
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
+					"value" : "Details about finding Python3"
 				}
 			],
-			"type" : "STATIC",
-			"value" : "C:/Projects/artistic_work/Checking_tool_of_pouring_machine/cmake-build-debug"
-		},
-		{
-			"name" : "HelloQt_Clion_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "HelloQt_Clion_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Projects/artistic_work/Checking_tool_of_pouring_machine"
+			"type" : "INTERNAL",
+			"value" : "[C:/Apps/Python/python.exe][C:/Apps/Python/libs/python39.lib][C:/Apps/Python/include][cfound components: Interpreter Development Development.Module Development.Embed ][v3.9.8()]"
 		},
 		{
 			"name" : "Qt5Core_DIR",
@@ -1579,7 +1559,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "date_time;regex;system"
+			"value" : "date_time;python39;regex;system"
 		},
 		{
 			"name" : "_Boost_INCLUDE_DIR_LAST",
@@ -1654,16 +1634,148 @@
 			"value" : "TRUE"
 		},
 		{
-			"name" : "rapidjson_DIR",
+			"name" : "_Python3_DEVELOPMENT_EMBED_SIGNATURE",
 			"properties" : 
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for rapidjson."
+					"value" : ""
 				}
 			],
-			"type" : "PATH",
-			"value" : "C:/Third_party_library/rapidjson-1.1.0/build"
+			"type" : "INTERNAL",
+			"value" : "7bb979a612979cf7e52f85a0fd149991"
+		},
+		{
+			"name" : "_Python3_DEVELOPMENT_MODULE_SIGNATURE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "7bb979a612979cf7e52f85a0fd149991"
+		},
+		{
+			"name" : "_Python3_EXECUTABLE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a program."
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "C:/Apps/Python/python.exe"
+		},
+		{
+			"name" : "_Python3_INCLUDE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "C:/Apps/Python/include"
+		},
+		{
+			"name" : "_Python3_INTERPRETER_PROPERTIES",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Python3 Properties"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "Python;3;9;8;64;;cp39-win_amd64;C:\\Apps\\Python\\Lib;C:\\Apps\\Python\\Lib;C:\\Apps\\Python\\Lib\\site-packages;C:\\Apps\\Python\\Lib\\site-packages"
+		},
+		{
+			"name" : "_Python3_INTERPRETER_SIGNATURE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "c61979d1624804c2f3310add75ebf6aa"
+		},
+		{
+			"name" : "_Python3_LIBRARY_DEBUG",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "_Python3_LIBRARY_DEBUG-NOTFOUND"
+		},
+		{
+			"name" : "_Python3_LIBRARY_RELEASE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "C:/Apps/Python/libs/python39.lib"
+		},
+		{
+			"name" : "_Python3_RUNTIME_LIBRARY_RELEASE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "C:/Apps/Python/python39.dll"
+		},
+		{
+			"name" : "inspiration_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Projects/artistic_work/inspiration/cmake-build-debug"
+		},
+		{
+			"name" : "inspiration_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "inspiration_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Projects/artistic_work/inspiration"
 		}
 	],
 	"kind" : "cache",

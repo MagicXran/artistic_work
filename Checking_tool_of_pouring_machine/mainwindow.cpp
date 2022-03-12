@@ -10,7 +10,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) , ui(new Ui::MainW
     ui->setupUi(this);
 
     this->setWindowIcon(QIcon(QPixmap(":/res/icons8-robot-50.ico")));
-    this->resize(1200 , 800);
+    this->resize(1500 , 800);
     this->setWindowTitle("注射机选择与校验");
 
     /**
@@ -33,6 +33,8 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) , ui(new Ui::MainW
     ui->tbl6->setOpenExternalLinks(true);
     ui->tbl7->setOpenExternalLinks(true);
     ui->tbl8->setOpenExternalLinks(true);
+    ui->text_dia->setToolTip("请查表输入冷却水道直径");
+    ui->text_dia->setToolTipDuration(1000);
 
     //way 1.
 //    ui->injectionM_table->setText(tr(R"(<a href='file:C:\Projects\Qt\HelloQt_Clion\res\inject_table.png'>注射机型号于技术参数表)"));
@@ -43,10 +45,10 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) , ui(new Ui::MainW
     ui->tbl2->setText(QString("<a href='file:").append(PROJECT_PATH).append("/res/p0.jpg'>部分塑料所需要的注射压力P0表"));
     ui->tbl3->setText(QString("<a href='file:").append(PROJECT_PATH).append("/res/p_mo.jpg'>常用塑料注射时,型腔内平均压力表表"));
     ui->tbl4->setText(QString("<a href='file:").append(PROJECT_PATH).append("/res/area.jpg'>分流道的横截面尺寸表"));
-    ui->tbl5->setText(QString("<a href='file:").append(PROJECT_PATH).append("/res/inject_table.png'>注射机型号于技术参数表"));
-    ui->tbl6->setText(QString("<a href='file:").append(PROJECT_PATH).append("/res/inject_table.png'>注射机型号于技术参数表"));
-    ui->tbl7->setText(QString("<a href='file:").append(PROJECT_PATH).append("/res/inject_table.png'>注射机型号于技术参数表"));
-    ui->tbl8->setText(QString("<a href='file:").append(PROJECT_PATH).append("/res/inject_table.png'>注射机型号于技术参数表"));
+    ui->tbl5->setText(QString("<a href='file:").append(PROJECT_PATH).append("/res/qs.jpg'>常用塑料熔体单位热容量Qs表"));
+    ui->tbl6->setText(QString("<a href='file:").append(PROJECT_PATH).append("/res/time.jpg'>常用塑料壁厚与冷却时间表"));
+    ui->tbl7->setText(QString("<a href='file:").append(PROJECT_PATH).append("/res/f.jpg'>水温与f表"));
+    ui->tbl8->setText(QString("<a href='file:").append(PROJECT_PATH).append("/res/d.jpg'>冷却水稳定湍流速度与流量"));
 
     // 初始化 流日志显示
     ui->text_log->setReadOnly(true);
@@ -102,23 +104,22 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) , ui(new Ui::MainW
 
         ui->text_log->append("<span style=color:'green'> 已选择 </span>");
 
-        double main_Rn = calc_->calc_main_Rn();
-        ui->text_main_radius->setText(QString::number(main_Rn));
 
         auto hole = parser_->getModel(ui->comboBox_machine->currentIndex() + 1)["hole_radius"].asDouble();
-        ui->text_log->append(
-                "<span style=color:'green'> 主流道小端半径: </span>" + QString::number(calc_->calc_main_r(hole)));
+        ui->text_log->append("<span style=color:'green'> 主流道小端半径: </span>" + QString::number(calc_->calc_main_r(hole)));
 
 
-        ui->text_log->append(
-                "<span style=color:'green'> 主流道大端半径: </span>" + QString::number(calc_->calc_main_R()));
+        ui->text_log->append("<span style=color:'green'> 主流道大端半径: </span>" + QString::number(calc_->calc_main_R()));
+
 
         auto sphere = parser_->getModel(ui->comboBox_machine->currentIndex() + 1)["sphere_radius"].asDouble();
-        ui->text_log->append("<span style=color:'green'> 主流道球面半径: </span>" +
-                             QString::number(calc_->calc_main_SR(sphere)));
-
         ui->text_log->append(
-                "<span style=color:'green'> 球面的配合高度: </span>" + QString::number(calc_->calc_main_h()));
+                "<span style=color:'green'> 主流道球面半径: </span>" + QString::number(calc_->calc_main_SR(sphere)));
+
+        ui->text_log->append("<span style=color:'green'> 球面的配合高度: </span>" + QString::number(calc_->calc_main_h()));
+
+        double main_Rn = calc_->calc_main_Rn();
+        ui->text_main_radius->setText(QString::number(main_Rn));
 
         ui->text_main_volume->setText(QString::number(calc_->calc_main_v()));
         ui->text_sub_volume->setText(QString::number(calc_->calc_subV()));
@@ -146,7 +147,50 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) , ui(new Ui::MainW
 
     });
 
+    // 冷却系统计算
+    connect(ui->btn_calc_cool_system , &QPushButton::clicked , [=]() {
+        auto l = ui->text_l->text().toDouble();
+        auto thetam = ui->text_theta_m->text().toDouble();
+        auto theta1 = ui->text_theta_1->text().toDouble();
+        auto theta2 = ui->text_theta_2->text().toDouble();
+        auto f = ui->text_f->text().toDouble();
+        auto v = ui->text_v->text().toDouble();
+        auto rhoo = ui->text_rho->text().toDouble();
+        auto time = ui->text_time->text().toDouble();
 
+        auto time_cool = parser_->getModel(ui->comboBox_machine->currentIndex() + 1)["time"].asDouble();
+
+        ui->text_log->append("<span style=color:'green'> 冷却时间: </span>" + QString::number(time));
+        ui->text_log->append("<span style=color:'green'> 总体积V: </span>" + QString::number(calc_->calc_V()));
+        ui->text_log->append(
+                "<span style=color:'green'> 总时间: </span>" + QString::number(calc_->calc_t(time , time_cool)));
+
+        auto W = calc_->calc_W(calc_->calc_N());
+        ui->text_quantity->setText(QString::number(W));
+        ui->text_log->append("<span style=color:'green'> 注射量: </span>" + QString::number(W));
+
+        auto traffic = calc_->calc_Qv(ui->text_Qs->text().toDouble() , theta1 , theta2 , rhoo);
+        ui->text_traffic->setText(QString::number(traffic));
+        ui->text_log->append("<span style=color:'green'> 冷却水体积流量: </span>" + QString::number(traffic));
+
+        auto flow_rate = calc_->calc_Speed(ui->text_dia->text().toDouble());
+        ui->text_flow_rate->setText(QString::number(flow_rate));
+        ui->text_log->append("<span style=color:'green'> 冷却水在管内流速: </span>" + QString::number(flow_rate));
+
+        auto h = calc_->calc_H(f , v);
+        ui->text_factor->setText(QString::number(h));
+        ui->text_log->append("<span style=color:'green'> 冷却管壁与水交界的膜传热系数: </span>" + QString::number(h));
+
+        auto A = calc_->calc_A(thetam);
+        ui->text_area->setText(QString::number(A));
+        ui->text_log->append("<span style=color:'green'> 冷却水道的传热总面积: </span>" + QString::number(A));
+
+        auto x = calc_->calc_X(l);
+        ui->text_X->setText(QString::number(x));
+        ui->text_log->append("<span style=color:'green'> 管道数目: </span>" + QString::number(x));
+
+
+    });
 }
 
 MainWindow::~MainWindow() {

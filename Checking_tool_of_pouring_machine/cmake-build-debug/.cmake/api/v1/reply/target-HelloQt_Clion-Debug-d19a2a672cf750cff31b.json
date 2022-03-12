@@ -49,6 +49,12 @@
 				"parent" : 0
 			},
 			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 99,
+				"parent" : 0
+			},
+			{
 				"command" : 3,
 				"file" : 0,
 				"line" : 103,
@@ -58,25 +64,25 @@
 				"command" : 2,
 				"file" : 1,
 				"line" : 388,
-				"parent" : 4
+				"parent" : 5
 			},
 			{
 				"command" : 2,
 				"file" : 1,
 				"line" : 388,
-				"parent" : 4
+				"parent" : 5
 			},
 			{
 				"command" : 4,
 				"file" : 1,
 				"line" : 390,
-				"parent" : 4
+				"parent" : 5
 			},
 			{
 				"command" : 4,
 				"file" : 1,
 				"line" : 390,
-				"parent" : 4
+				"parent" : 5
 			},
 			{
 				"command" : 5,
@@ -100,13 +106,13 @@
 				"command" : 4,
 				"file" : 1,
 				"line" : 389,
-				"parent" : 4
+				"parent" : 5
 			},
 			{
 				"command" : 4,
 				"file" : 1,
 				"line" : 389,
-				"parent" : 4
+				"parent" : 5
 			}
 		]
 	},
@@ -125,15 +131,15 @@
 			"defines" : 
 			[
 				{
-					"backtrace" : 7,
+					"backtrace" : 8,
 					"define" : "QT_CORE_LIB"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 9,
 					"define" : "QT_GUI_LIB"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 9,
 					"define" : "QT_WIDGETS_LIB"
 				}
 			],
@@ -150,44 +156,44 @@
 					"path" : "C:/Projects/artistic_work/Checking_tool_of_pouring_machine/cmake-build-debug/HelloQt_Clion_autogen/include"
 				},
 				{
-					"backtrace" : 9,
+					"backtrace" : 10,
 					"path" : "C:/boost_1_69_0"
 				},
 				{
-					"backtrace" : 10,
+					"backtrace" : 11,
 					"path" : "C:/Projects/artistic_work/Checking_tool_of_pouring_machine/rapidjson"
 				},
 				{
-					"backtrace" : 11,
+					"backtrace" : 12,
 					"path" : "C:/Projects/artistic_work/Checking_tool_of_pouring_machine/include"
 				},
 				{
-					"backtrace" : 12,
+					"backtrace" : 13,
 					"isSystem" : true,
 					"path" : "C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include"
 				},
 				{
-					"backtrace" : 12,
+					"backtrace" : 13,
 					"isSystem" : true,
 					"path" : "C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtCore"
 				},
 				{
-					"backtrace" : 12,
+					"backtrace" : 13,
 					"isSystem" : true,
 					"path" : "C:/Qt/Qt5.14.2/5.14.2/mingw73_64/./mkspecs/win32-g++"
 				},
 				{
-					"backtrace" : 13,
+					"backtrace" : 14,
 					"isSystem" : true,
 					"path" : "C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets"
 				},
 				{
-					"backtrace" : 13,
+					"backtrace" : 14,
 					"isSystem" : true,
 					"path" : "C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtGui"
 				},
 				{
-					"backtrace" : 13,
+					"backtrace" : 14,
 					"isSystem" : true,
 					"path" : "C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtANGLE"
 				}
@@ -278,12 +284,17 @@
 				"role" : "libraries"
 			},
 			{
+				"backtrace" : 4,
+				"fragment" : "-lws2_32",
+				"role" : "libraries"
+			},
+			{
 				"backtrace" : 3,
 				"fragment" : "C:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\lib\\libQt5Widgets.a",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 5,
+				"backtrace" : 6,
 				"fragment" : "C:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\lib\\libQt5Gui.a",
 				"role" : "libraries"
 			},
@@ -303,7 +314,12 @@
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 6,
+				"backtrace" : 4,
+				"fragment" : "-lws2_32",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
 				"fragment" : "C:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\lib\\libQt5Core.a",
 				"role" : "libraries"
 			},

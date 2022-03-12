@@ -14,6 +14,12 @@
 # EXTERNAL cache entries
 ########################
 
+//Boost asio library (debug)
+Boost_ASIO_LIBRARY_DEBUG:FILEPATH=Boost_ASIO_LIBRARY_DEBUG-NOTFOUND
+
+//Boost asio library (release)
+Boost_ASIO_LIBRARY_RELEASE:FILEPATH=Boost_ASIO_LIBRARY_RELEASE-NOTFOUND
+
 //Boost date_time library (debug)
 Boost_DATE_TIME_LIBRARY_DEBUG:FILEPATH=C:/boost_1_69_0/stage/lib/libboost_date_time-mgw73-mt-d-1_69.a
 
@@ -304,6 +310,10 @@ rapidjson_DIR:PATH=C:/Third_party_library/rapidjson-1.1.0/build
 # INTERNAL cache entries
 ########################
 
+//ADVANCED property for variable: Boost_ASIO_LIBRARY_DEBUG
+Boost_ASIO_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_ASIO_LIBRARY_RELEASE
+Boost_ASIO_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Boost_DATE_TIME_LIBRARY_DEBUG
 Boost_DATE_TIME_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Boost_DATE_TIME_LIBRARY_RELEASE

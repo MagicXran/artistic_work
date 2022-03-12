@@ -554,7 +554,7 @@
             </widget>
            </item>
            <item row="1" column="0">
-            <widget class="QLineEdit" name="text_cool_time_6">
+            <widget class="QLineEdit" name="text_X">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
                <horstretch>0</horstretch>
@@ -643,7 +643,23 @@
               <string/>
              </property>
              <property name="placeholderText">
-              <string>请输入ρc</string>
+              <string>请输入ρ</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="text_v">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>请输入v</string>
              </property>
             </widget>
            </item>
@@ -767,7 +783,7 @@
                </font>
               </property>
               <property name="text">
-               <string>f_tbl</string>
+               <string>水温与f</string>
               </property>
              </widget>
             </widget>
@@ -807,6 +823,12 @@
                 <verstretch>0</verstretch>
                </sizepolicy>
               </property>
+              <property name="toolTip">
+               <string comment="请查表输入冷却水道直径" extracomment="请查表输入冷却水道直径">请查表输入冷却水道直径</string>
+              </property>
+              <property name="toolTipDuration">
+               <number>2</number>
+              </property>
               <property name="text">
                <string/>
               </property>
@@ -829,7 +851,7 @@
                </font>
               </property>
               <property name="text">
-               <string>Table</string>
+               <string>冷却水稳定湍流速度与流量</string>
               </property>
              </widget>
             </widget>

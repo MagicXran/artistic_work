@@ -1,0 +1,4 @@
+C:/Projects/artistic_work/middleware/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Projects/artistic_work/middleware/cmake-build-debug/CMakeFiles/middleware.dir
+C:/Projects/artistic_work/middleware/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Projects/artistic_work/middleware/cmake-build-debug/CMakeFiles/middleware_autogen.dir

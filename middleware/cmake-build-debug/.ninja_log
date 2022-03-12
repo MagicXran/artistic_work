@@ -1,0 +1,8 @@
+# ninja log v5
+2	325	6682807292635808	build.ninja	36543b807aec9fa4
+1	92	0	CMakeFiles/middleware_autogen	3b5675c94651bee2
+1	92	0	middleware_autogen/mocs_compilation.cpp	3b5675c94651bee2
+1	92	0	C:/Projects/artistic_work/middleware/cmake-build-debug/CMakeFiles/middleware_autogen	3b5675c94651bee2
+1	92	0	C:/Projects/artistic_work/middleware/cmake-build-debug/middleware_autogen/mocs_compilation.cpp	3b5675c94651bee2
+96	144	6682807294345775	CMakeFiles/middleware.dir/middleware_autogen/mocs_compilation.cpp.obj	7f7dfa126bbb210e
+93	1655	6682807309455120	CMakeFiles/middleware.dir/main.cpp.obj	77d8ee872d657eb7

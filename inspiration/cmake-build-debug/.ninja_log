@@ -1,0 +1,20 @@
+# ninja log v5
+58	3254	6687543447921019	CMakeFiles/inspiration.dir/main.cpp.obj	35779524240294c0
+456	2758	6687059834875355	CMakeFiles/inspiration.dir/inspiration_autogen/mocs_compilation.cpp.obj	d340d11c0fb53852
+3255	5645	6687543471855714	inspiration.exe	9fe7f4f96bff11e8
+13	58	0	C:/Projects/artistic_work/inspiration/cmake-build-debug/CMakeFiles/inspiration_autogen	edcdc9753529d3b7
+13	58	0	CMakeFiles/inspiration_autogen	edcdc9753529d3b7
+13	58	0	C:/Projects/artistic_work/inspiration/cmake-build-debug/inspiration_autogen/mocs_compilation.cpp	edcdc9753529d3b7
+13	58	0	inspiration_autogen/mocs_compilation.cpp	edcdc9753529d3b7
+460	6384	6687059871133268	CMakeFiles/inspiration.dir/correspondence/chat_client.cc.obj	6ef55540cd1fb9f7
+469	5167	6687059858852870	CMakeFiles/inspiration.dir/correspondence/synasio.cc.obj	d634c5c98d05a42a
+465	6147	6687059868784089	CMakeFiles/inspiration.dir/correspondence/chat_server.cc.obj	84ff9ba8dd201d90
+472	2932	6687059836588650	CMakeFiles/inspiration.dir/ui/network_socket.cc.obj	cd42614483f236d6
+8	420	6687808476004106	build.ninja	511ed196d0a47bae
+14	58	0	CMakeFiles/inspiration_autogen	edcdc9753529d3b7
+14	58	0	inspiration_autogen/mocs_compilation.cpp	edcdc9753529d3b7
+14	58	0	C:/Projects/artistic_work/inspiration/cmake-build-debug/CMakeFiles/inspiration_autogen	edcdc9753529d3b7
+14	58	0	C:/Projects/artistic_work/inspiration/cmake-build-debug/inspiration_autogen/mocs_compilation.cpp	edcdc9753529d3b7
+61	355	6687815782631266	CMakeFiles/inspiration.dir/shareMemory/testShareMemory.cc.obj	61341da772bcb1d1
+59	3334	6687815812326074	CMakeFiles/inspiration.dir/main.cpp.obj	35779524240294c0
+3335	5827	6687815837261034	inspiration.exe	35299e147d14a18e

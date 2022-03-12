@@ -20,6 +20,7 @@ extern const NUMBER_TYPE SR_factor;  //1~2
 extern const NUMBER_TYPE h_factor;  //1~2
 extern const NUMBER_TYPE alfa_factor;  //2~4
 extern const NUMBER_TYPE sub_factor;
+extern const NUMBER_TYPE time_tuo;
 
 
 class calibration_parameters : public std::enable_shared_from_this<calibration_parameters> {
@@ -28,7 +29,27 @@ private:
     NUMBER_TYPE v_su_ {}  /** 输入的v塑 **/  , v_main_ {} /** 计算的v总 **/ ;
     NUMBER_TYPE m_su_ {} , suo_force_ {} , a_su_ {} , p0_ {} , n_ {} , f_zhang_ {} , p_mo {};
     NUMBER_TYPE main_l_ {} , main_r_ {} , main_R_ {} , main_sr_ {} , main_h_ {} , main_v_ {} , main_Rn_ {} , sub_l_ {} , sub_A_ {} , sub_v_ {};
+    NUMBER_TYPE v_ {} , t_ {} , w_ {} , qs_ {} , theta1_ {} , theta2_ {} , rhoc_ {} , qv_ {} , d_ {} , h_ {} , A_ {};
 public:
+
+    double calc_X(double l);
+
+    double calc_A(double thetam);
+
+    double calc_H(double f , double v);
+
+    double calc_Speed(NUMBER_TYPE d);
+
+    double calc_Qv(NUMBER_TYPE qs,double theta1 , double theta2 , double rhoc);
+
+    double calc_t(NUMBER_TYPE t_cool , NUMBER_TYPE t_tbl);
+
+    double calc_N();
+
+    double calc_V();
+
+    double calc_W(double N);
+
     double getMainL() const;
 
     void setMainL(double mainL);

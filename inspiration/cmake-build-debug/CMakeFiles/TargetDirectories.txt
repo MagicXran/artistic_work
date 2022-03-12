@@ -1,0 +1,4 @@
+C:/Projects/artistic_work/inspiration/cmake-build-debug/CMakeFiles/inspiration.dir
+C:/Projects/artistic_work/inspiration/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Projects/artistic_work/inspiration/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Projects/artistic_work/inspiration/cmake-build-debug/CMakeFiles/inspiration_autogen.dir

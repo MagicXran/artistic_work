@@ -95,9 +95,9 @@ target_link_libraries(HelloQt_Clion Qt5::Widgets ${Boost_LIBRARIES}
                       )
 
 # 解决 Windows 使用 asio库 报错: undefined reference to `__imp_WSAStartup'
-#if (MINGW)
-#    target_link_libraries(HelloQt_Clion ws2_32)
-#endif ()
+if (MINGW)
+    target_link_libraries(HelloQt_Clion ws2_32)
+endif ()
 
 # 把对应Qt模块的库链接进程序
 qt5_use_modules(HelloQt_Clion Core Widgets Gui)
