@@ -79,48 +79,29 @@
 		"C:/Users/Administrator/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/win/share/cmake-3.21/Modules/FindPython3.cmake",
 		"C:/Users/Administrator/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/win/share/cmake-3.21/Modules/FindPython/Support.cmake",
 		"C:/Users/Administrator/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/win/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake",
-		"C:/Users/Administrator/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/win/share/cmake-3.21/Modules/FindPackageMessage.cmake"
+		"C:/Users/Administrator/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/win/share/cmake-3.21/Modules/FindPackageMessage.cmake",
+		"C:/Program Files (x86)/glog/lib/cmake/glog/glog-config-version.cmake",
+		"C:/Program Files (x86)/glog/lib/cmake/glog/glog-config.cmake",
+		"C:/Users/Administrator/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/win/share/cmake-3.21/Modules/CMakeFindDependencyMacro.cmake",
+		"C:/Program Files (x86)/glog/lib/cmake/glog/glog-modules.cmake",
+		"C:/Program Files (x86)/glog/lib/cmake/glog/glog-targets.cmake",
+		"C:/Program Files (x86)/glog/lib/cmake/glog/glog-targets-noconfig.cmake"
 	],
 	"CMAKE_SOURCE_DIR" : "C:/Projects/artistic_work/inspiration",
 	"DEP_FILE" : "",
 	"DEP_FILE_RULE_NAME" : "",
-	"HEADERS" : 
-	[
-		[
-			"C:/Projects/artistic_work/inspiration/accessor/file_accessor.hpp",
-			"MU",
-			"4D2GMBMKEF/moc_file_accessor.cpp",
-			null
-		],
-		[
-			"C:/Projects/artistic_work/inspiration/correspondence/chat_message.hpp",
-			"MU",
-			"2C46OLKYYB/moc_chat_message.cpp",
-			null
-		],
-		[
-			"C:/Projects/artistic_work/inspiration/correspondence/communication.h",
-			"MU",
-			"2C46OLKYYB/moc_communication.cpp",
-			null
-		],
-		[
-			"C:/Projects/artistic_work/inspiration/correspondence/synasio.h",
-			"MU",
-			"2C46OLKYYB/moc_synasio.cpp",
-			null
-		],
-		[
-			"C:/Projects/artistic_work/inspiration/ui/network_socket.h",
-			"MU",
-			"UYX5XTB5RZ/moc_network_socket.cpp",
-			null
-		]
-	],
+	"HEADERS" : [],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "C:/Projects/artistic_work/inspiration/cmake-build-debug/inspiration_autogen/include",
 	"MOC_COMPILATION_FILE" : "C:/Projects/artistic_work/inspiration/cmake-build-debug/inspiration_autogen/mocs_compilation.cpp",
-	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_WIDGETS_LIB" ],
+	"MOC_DEFINITIONS" : 
+	[
+		"GLOG_CUSTOM_PREFIX_SUPPORT",
+		"GLOG_NO_ABBREVIATED_SEVERITIES",
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_WIDGETS_LIB"
+	],
 	"MOC_DEPEND_FILTERS" : 
 	[
 		[
@@ -134,6 +115,7 @@
 		"C:/Projects/artistic_work/inspiration",
 		"C:/boost_1_69_0",
 		"C:/Apps/Python/include",
+		"C:/Program Files (x86)/glog/include",
 		"C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include",
 		"C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtCore",
 		"C:/Qt/Qt5.14.2/5.14.2/mingw73_64/mkspecs/win32-g++",
@@ -172,28 +154,7 @@
 	"SOURCES" : 
 	[
 		[
-			"C:/Projects/artistic_work/inspiration/correspondence/chat_client.cc",
-			"MU",
-			null
-		],
-		[
-			"C:/Projects/artistic_work/inspiration/correspondence/chat_server.cc",
-			"MU",
-			null
-		],
-		[
-			"C:/Projects/artistic_work/inspiration/correspondence/synasio.cc",
-			"MU",
-			null
-		],
-		[ "C:/Projects/artistic_work/inspiration/main.cpp", "MU", null ],
-		[
-			"C:/Projects/artistic_work/inspiration/shareMemory/testShareMemory.cc",
-			"MU",
-			null
-		],
-		[
-			"C:/Projects/artistic_work/inspiration/ui/network_socket.cc",
+			"C:/Projects/artistic_work/inspiration/loger/glog_test.cc",
 			"MU",
 			null
 		]

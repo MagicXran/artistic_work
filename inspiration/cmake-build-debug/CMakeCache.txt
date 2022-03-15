@@ -38,12 +38,6 @@ Boost_PYTHON39_LIBRARY_DEBUG:FILEPATH=C:/boost_1_69_0/stage/lib/libboost_python3
 //Boost python39 library (release)
 Boost_PYTHON39_LIBRARY_RELEASE:FILEPATH=C:/boost_1_69_0/stage/lib/libboost_python39-mgw73-mt-1_69.a
 
-//Boost python library (debug)
-Boost_PYTHON_LIBRARY_DEBUG:FILEPATH=Boost_PYTHON_LIBRARY_DEBUG-NOTFOUND
-
-//Boost python library (release)
-Boost_PYTHON_LIBRARY_RELEASE:FILEPATH=Boost_PYTHON_LIBRARY_RELEASE-NOTFOUND
-
 //Boost regex library (debug)
 Boost_REGEX_LIBRARY_DEBUG:FILEPATH=C:/boost_1_69_0/stage/lib/libboost_regex-mgw73-mt-d-1_69.a
 
@@ -284,6 +278,9 @@ Qt5Gui_DIR:PATH=C:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/cmake/Qt5Gui
 //The directory containing a CMake configuration file for Qt5Widgets.
 Qt5Widgets_DIR:PATH=C:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/cmake/Qt5Widgets
 
+//The directory containing a CMake configuration file for glog.
+glog_DIR:PATH=C:/Program Files (x86)/glog/lib/cmake/glog
+
 //Value Computed by CMake
 inspiration_BINARY_DIR:STATIC=C:/Projects/artistic_work/inspiration/cmake-build-debug
 
@@ -292,6 +289,9 @@ inspiration_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 inspiration_SOURCE_DIR:STATIC=C:/Projects/artistic_work/inspiration
+
+//The directory containing a CMake configuration file for loger.
+loger_DIR:PATH=loger_DIR-NOTFOUND
 
 
 ########################
@@ -314,10 +314,6 @@ Boost_LIBRARY_DIR_RELEASE-ADVANCED:INTERNAL=1
 Boost_PYTHON39_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Boost_PYTHON39_LIBRARY_RELEASE
 Boost_PYTHON39_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: Boost_PYTHON_LIBRARY_DEBUG
-Boost_PYTHON_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: Boost_PYTHON_LIBRARY_RELEASE
-Boost_PYTHON_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Boost_REGEX_LIBRARY_DEBUG
 Boost_REGEX_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Boost_REGEX_LIBRARY_RELEASE

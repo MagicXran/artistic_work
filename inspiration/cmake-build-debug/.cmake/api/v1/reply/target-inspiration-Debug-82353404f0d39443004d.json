@@ -14,6 +14,7 @@
 		"commands" : 
 		[
 			"add_executable",
+			"link_directories",
 			"target_link_libraries",
 			"qt5_use_modules",
 			"set_property",
@@ -33,17 +34,17 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 48,
+				"line" : 56,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 49,
+				"line" : 51,
 				"parent" : 0
 			},
 			{
-				"command" : 1,
+				"command" : 2,
 				"file" : 0,
 				"line" : 57,
 				"parent" : 0
@@ -51,56 +52,68 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 69,
+				"line" : 66,
 				"parent" : 0
 			},
 			{
-				"command" : 1,
+				"command" : 3,
+				"file" : 0,
+				"line" : 78,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
 				"file" : 1,
 				"line" : 388,
-				"parent" : 4
+				"parent" : 5
 			},
 			{
-				"command" : 1,
+				"command" : 2,
 				"file" : 1,
 				"line" : 388,
-				"parent" : 4
-			},
-			{
-				"command" : 3,
-				"file" : 1,
-				"line" : 390,
-				"parent" : 4
-			},
-			{
-				"command" : 3,
-				"file" : 1,
-				"line" : 390,
-				"parent" : 4
+				"parent" : 5
 			},
 			{
 				"command" : 4,
+				"file" : 1,
+				"line" : 390,
+				"parent" : 5
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 390,
+				"parent" : 5
+			},
+			{
+				"command" : 5,
 				"file" : 0,
 				"line" : 36,
 				"parent" : 0
 			},
 			{
-				"command" : 5,
+				"command" : 6,
 				"file" : 0,
-				"line" : 63,
+				"line" : 72,
 				"parent" : 0
 			},
 			{
-				"command" : 3,
-				"file" : 1,
-				"line" : 389,
-				"parent" : 4
+				"command" : 5,
+				"file" : 0,
+				"line" : 49,
+				"parent" : 0
 			},
 			{
-				"command" : 3,
+				"command" : 4,
 				"file" : 1,
 				"line" : 389,
-				"parent" : 4
+				"parent" : 5
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 389,
+				"parent" : 5
 			}
 		]
 	},
@@ -119,15 +132,23 @@
 			"defines" : 
 			[
 				{
-					"backtrace" : 7,
+					"backtrace" : 3,
+					"define" : "GLOG_CUSTOM_PREFIX_SUPPORT"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "GLOG_NO_ABBREVIATED_SEVERITIES"
+				},
+				{
+					"backtrace" : 8,
 					"define" : "QT_CORE_LIB"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 9,
 					"define" : "QT_GUI_LIB"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 9,
 					"define" : "QT_WIDGETS_LIB"
 				}
 			],
@@ -144,40 +165,45 @@
 					"path" : "C:/Projects/artistic_work/inspiration/cmake-build-debug/inspiration_autogen/include"
 				},
 				{
-					"backtrace" : 9,
+					"backtrace" : 10,
 					"path" : "C:/boost_1_69_0"
 				},
 				{
-					"backtrace" : 10,
+					"backtrace" : 11,
 					"path" : "C:/Apps/Python/include"
 				},
 				{
-					"backtrace" : 11,
+					"backtrace" : 12,
+					"isSystem" : true,
+					"path" : "C:/Program Files (x86)/glog/include"
+				},
+				{
+					"backtrace" : 13,
 					"isSystem" : true,
 					"path" : "C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include"
 				},
 				{
-					"backtrace" : 11,
+					"backtrace" : 13,
 					"isSystem" : true,
 					"path" : "C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtCore"
 				},
 				{
-					"backtrace" : 11,
+					"backtrace" : 13,
 					"isSystem" : true,
 					"path" : "C:/Qt/Qt5.14.2/5.14.2/mingw73_64/./mkspecs/win32-g++"
 				},
 				{
-					"backtrace" : 12,
+					"backtrace" : 14,
 					"isSystem" : true,
 					"path" : "C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets"
 				},
 				{
-					"backtrace" : 12,
+					"backtrace" : 14,
 					"isSystem" : true,
 					"path" : "C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtGui"
 				},
 				{
-					"backtrace" : 12,
+					"backtrace" : 14,
 					"isSystem" : true,
 					"path" : "C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtANGLE"
 				}
@@ -187,19 +213,14 @@
 			{
 				"backtraces" : 
 				[
-					2
+					3
 				],
 				"standard" : "14"
 			},
 			"sourceIndexes" : 
 			[
 				0,
-				1,
-				3,
-				7,
-				8,
-				9,
-				12
+				1
 			]
 		}
 	],
@@ -225,51 +246,61 @@
 			},
 			{
 				"backtrace" : 2,
+				"fragment" : "-LC:\\PROGRA~2\\glog\\lib",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 3,
 				"fragment" : "C:\\boost_1_69_0\\stage\\lib\\libboost_date_time-mgw73-mt-d-1_69.a",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 2,
+				"backtrace" : 3,
 				"fragment" : "C:\\boost_1_69_0\\stage\\lib\\libboost_regex-mgw73-mt-d-1_69.a",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 2,
+				"backtrace" : 3,
 				"fragment" : "C:\\boost_1_69_0\\stage\\lib\\libboost_system-mgw73-mt-d-1_69.a",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 2,
+				"backtrace" : 3,
 				"fragment" : "C:\\boost_1_69_0\\stage\\lib\\libboost_python39-mgw73-mt-d-1_69.a",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 2,
+				"backtrace" : 3,
 				"fragment" : "C:\\Apps\\Python\\libs\\python39.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 3,
+				"fragment" : "\"C:\\Program Files (x86)\\glog\\lib\\libglog.dll.a\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
 				"fragment" : "-lws2_32",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 3,
+				"backtrace" : 4,
 				"fragment" : "-lwsock32",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 2,
+				"backtrace" : 3,
 				"fragment" : "C:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\lib\\libQt5Widgets.a",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 5,
+				"backtrace" : 6,
 				"fragment" : "C:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\lib\\libQt5Gui.a",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 6,
+				"backtrace" : 7,
 				"fragment" : "C:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\lib\\libQt5Core.a",
 				"role" : "libraries"
 			},
@@ -294,30 +325,7 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1,
-				3,
-				7,
-				8,
-				9,
-				12
-			]
-		},
-		{
-			"name" : "Header Files",
-			"sourceIndexes" : 
-			[
-				2,
-				4,
-				5,
-				6,
-				10
-			]
-		},
-		{
-			"name" : "",
-			"sourceIndexes" : 
-			[
-				11
+				1
 			]
 		}
 	],
@@ -333,67 +341,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "main.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "accessor/file_accessor.hpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "correspondence/synasio.cc",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "correspondence/synasio.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "correspondence/communication.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "correspondence/chat_message.hpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "correspondence/chat_client.cc",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "correspondence/chat_server.cc",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "ui/network_socket.cc",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "ui/network_socket.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "ui/network_socket.ui",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "shareMemory/testShareMemory.cc",
+			"path" : "loger/glog_test.cc",
 			"sourceGroupIndex" : 0
 		}
 	],

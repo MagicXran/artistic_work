@@ -106,6 +106,7 @@
 #define __LDBL_HAS_QUIET_NAN__ 1
 #define __FLT64_MANT_DIG__ 53
 #define _REENTRANT 1
+#define GLOG_CUSTOM_PREFIX_SUPPORT 1
 #define __GNUC__ 7
 #define _cdecl __attribute__((__cdecl__))
 #define __GXX_RTTI 1
@@ -377,6 +378,7 @@
 #define __FLT32X_DIG__ 15
 #define __PTRDIFF_TYPE__ long long int
 #define __ATOMIC_SEQ_CST 5
+#define GLOG_NO_ABBREVIATED_SEVERITIES 1
 #define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_16 1
 #define __UINT32_TYPE__ unsigned int
 #define __FLT32X_MIN_10_EXP__ (-307)

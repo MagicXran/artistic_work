@@ -43,13 +43,22 @@ find_package(Python3 COMPONENTS Interpreter Development REQUIRED)
 # 添加python动态链接库文件目录
 #link_directories(C:/Apps/Python/libs)
 
+####################################################################################loger
+find_package (glog 0.6.0 REQUIRED)
+# 添加头文件路径
+include_directories("C:/Program Files (x86)/glog/include")
+# 添加动态链接库文件目录
+link_directories("C:/Program Files (x86)/glog/lib")
 
-set(SOURCE_FILES main.cpp accessor/file_accessor.hpp correspondence/synasio.cc correspondence/synasio.h correspondence/communication.h correspondence/chat_message.hpp correspondence/chat_client.cc correspondence/chat_server.cc ui/network_socket.cc ui/network_socket.h ui/network_socket.ui shareMemory/testShareMemory.cc)
+
+set(SOURCE_FILES loger/glog_test.cc)
+#set(SOURCE_FILES main.cpp accessor/file_accessor.hpp correspondence/synasio.cc correspondence/synasio.h correspondence/communication.h correspondence/chat_message.hpp correspondence/chat_client.cc correspondence/chat_server.cc ui/network_socket.cc ui/network_socket.h ui/network_socket.ui shareMemory/testShareMemory.cc loger/glog_test.cc)
 add_executable(inspiration ${RC_FILES} ${SOURCE_FILES} ${UI_FILES} ${QRC_FILES})
 target_link_libraries(inspiration
                       Qt5::Widgets
                       ${Boost_LIBRARIES}
                       ${Python3_LIBRARIES}
+                      glog::glog
                       )
 
 # 解决 Windows 使用 asio库 报错: undefined reference to `__imp_WSAStartup'
