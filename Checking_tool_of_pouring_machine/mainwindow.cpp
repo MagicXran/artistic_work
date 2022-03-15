@@ -10,7 +10,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) , ui(new Ui::MainW
     ui->setupUi(this);
 
     this->setWindowIcon(QIcon(QPixmap(":/res/icons8-robot-50.ico")));
-    this->resize(1500 , 800);
+    this->resize(1000 , 800);
     this->setWindowTitle("注射机选择与校验");
 
     /**
