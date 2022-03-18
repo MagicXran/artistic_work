@@ -295,7 +295,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/Administrator/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/win/bin/cmake.exe"
+			"value" : "C:/Users/Administrator/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/cmake/win/bin/cmake.exe"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -307,7 +307,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/Administrator/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/win/bin/cpack.exe"
+			"value" : "C:/Users/Administrator/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/cmake/win/bin/cpack.exe"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -319,7 +319,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/Administrator/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/win/bin/ctest.exe"
+			"value" : "C:/Users/Administrator/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/cmake/win/bin/ctest.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -855,7 +855,7 @@
 				}
 			],
 			"type" : "UNINITIALIZED",
-			"value" : "C:/Users/Administrator/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/ninja/win/ninja.exe"
+			"value" : "C:/Users/Administrator/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/ninja/win/ninja.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -1195,7 +1195,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/Administrator/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/win/share/cmake-3.21"
+			"value" : "C:/Users/Administrator/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/cmake/win/share/cmake-3.21"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1756,30 +1756,6 @@
 			],
 			"type" : "STATIC",
 			"value" : "C:/Projects/artistic_work/inspiration"
-		},
-		{
-			"name" : "loger_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for loger."
-				}
-			],
-			"type" : "PATH",
-			"value" : "loger_DIR-NOTFOUND"
-		},
-		{
-			"name" : "rapidjson_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for rapidjson."
-				}
-			],
-			"type" : "PATH",
-			"value" : "C:/Third_party_library/rapidjson-1.1.0/build"
 		}
 	],
 	"kind" : "cache",
