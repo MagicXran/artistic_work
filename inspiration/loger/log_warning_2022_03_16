@@ -1,0 +1,5 @@
+Log file created at: 2022/03/16 15:58:04
+Running on machine: KARMA
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+F0316 15:58:04.301013  7856 glog_test.cc:14] Check failed: 1 != 1 (1 vs. 1) : The world must be ending!

@@ -1768,6 +1768,18 @@
 			],
 			"type" : "PATH",
 			"value" : "loger_DIR-NOTFOUND"
+		},
+		{
+			"name" : "rapidjson_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for rapidjson."
+				}
+			],
+			"type" : "PATH",
+			"value" : "C:/Third_party_library/rapidjson-1.1.0/build"
 		}
 	],
 	"kind" : "cache",

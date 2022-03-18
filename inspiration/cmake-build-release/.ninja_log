@@ -1,0 +1,23 @@
+# ninja log v5
+1	81	0	CMakeFiles/inspiration_autogen	f172df6d734718f
+1	81	0	inspiration_autogen/mocs_compilation.cpp	f172df6d734718f
+1	81	0	C:/Projects/artistic_work/inspiration/cmake-build-release/CMakeFiles/inspiration_autogen	f172df6d734718f
+1	81	0	C:/Projects/artistic_work/inspiration/cmake-build-release/inspiration_autogen/mocs_compilation.cpp	f172df6d734718f
+84	126	6691214636344858	CMakeFiles/inspiration.dir/inspiration_autogen/mocs_compilation.cpp.obj	45b48da474733f24
+82	661	6691214641688572	CMakeFiles/inspiration.dir/loger/glog_test.cc.obj	156f39d5cdcf5c2e
+86	845	6691214643538395	CMakeFiles/inspiration.dir/loger/gloger.cc.obj	a2647192bad96e72
+846	1243	6691214647457574	inspiration.exe	6956c05bd0199a4b
+3	44	0	CMakeFiles/inspiration_autogen	f172df6d734718f
+3	44	0	inspiration_autogen/mocs_compilation.cpp	f172df6d734718f
+3	44	0	C:/Projects/artistic_work/inspiration/cmake-build-release/CMakeFiles/inspiration_autogen	f172df6d734718f
+3	44	0	C:/Projects/artistic_work/inspiration/cmake-build-release/inspiration_autogen/mocs_compilation.cpp	f172df6d734718f
+3	40	0	CMakeFiles/inspiration_autogen	f172df6d734718f
+3	40	0	inspiration_autogen/mocs_compilation.cpp	f172df6d734718f
+3	40	0	C:/Projects/artistic_work/inspiration/cmake-build-release/CMakeFiles/inspiration_autogen	f172df6d734718f
+3	40	0	C:/Projects/artistic_work/inspiration/cmake-build-release/inspiration_autogen/mocs_compilation.cpp	f172df6d734718f
+41	532	6691215667036728	CMakeFiles/inspiration.dir/loger/glog_test.cc.obj	156f39d5cdcf5c2e
+533	932	6691215670959832	inspiration.exe	6956c05bd0199a4b
+3	35	0	CMakeFiles/inspiration_autogen	f172df6d734718f
+3	35	0	inspiration_autogen/mocs_compilation.cpp	f172df6d734718f
+3	35	0	C:/Projects/artistic_work/inspiration/cmake-build-release/CMakeFiles/inspiration_autogen	f172df6d734718f
+3	35	0	C:/Projects/artistic_work/inspiration/cmake-build-release/inspiration_autogen/mocs_compilation.cpp	f172df6d734718f

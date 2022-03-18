@@ -1,0 +1,32 @@
+Log file created at: 2022/03/16 15:58:04
+Running on machine: KARMA
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+F0316 15:58:04.301013  7856 glog_test.cc:14] Check failed: 1 != 1 (1 vs. 1) : The world must be ending!
+Log file created at: 2022/03/16 16:02:03
+Running on machine: KARMA
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0316 16:02:03.187206  4060 glog_test.cc:15] Found cookies
+Log file created at: 2022/03/16 16:08:17
+Running on machine: KARMA
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0316 16:08:17.210599 13004 glog_test.cc:17] Found cookies
+Log file created at: 2022/03/16 16:08:31
+Running on machine: KARMA
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0316 16:08:31.570386  5700 glog_test.cc:15] Found cookies
+I0316 16:08:31.571375  5700 glog_test.cc:16] Got lots of cookies
+Log file created at: 2022/03/16 16:14:27
+Running on machine: KARMA
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0316 16:14:27.636674 20768 glog_test.cc:17] Got lots of cookies
+Log file created at: 2022/03/16 16:14:57
+Running on machine: KARMA
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0316 16:14:57.703979 12204 glog_test.cc:16] Found cookies
+I0316 16:14:57.704979 12204 glog_test.cc:17] Got lots of cookies

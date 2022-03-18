@@ -50,15 +50,27 @@ include_directories("C:/Program Files (x86)/glog/include")
 # 添加动态链接库文件目录
 link_directories("C:/Program Files (x86)/glog/lib")
 
+###################################################################################json
 
-set(SOURCE_FILES loger/glog_test.cc)
-#set(SOURCE_FILES main.cpp accessor/file_accessor.hpp correspondence/synasio.cc correspondence/synasio.h correspondence/communication.h correspondence/chat_message.hpp correspondence/chat_client.cc correspondence/chat_server.cc ui/network_socket.cc ui/network_socket.h ui/network_socket.ui shareMemory/testShareMemory.cc loger/glog_test.cc)
+################################################## 配置 json解析器: rapidjson
+
+set(INC_DIR include)
+set(LINK_DIR libs)
+
+include_directories(${INC_DIR})
+link_directories(${LINK_DIR})
+link_libraries(libjsoncpp.a)
+
+
+set(SOURCE_FILES  asio/asyn_asio.cc)
+#set(SOURCE_FILES main.cpp accessor/file_accessor.hpp correspondence/synasio.cc correspondence/synasio.h correspondence/communication.h correspondence/chat_message.hpp correspondence/chat_client.cc correspondence/chat_server.cc ui/network_socket.cc ui/network_socket.h ui/network_socket.ui boost_interprocess/testShareMemory.cc loger/glog_test.cc)
 add_executable(inspiration ${RC_FILES} ${SOURCE_FILES} ${UI_FILES} ${QRC_FILES})
 target_link_libraries(inspiration
                       Qt5::Widgets
                       ${Boost_LIBRARIES}
                       ${Python3_LIBRARIES}
                       glog::glog
+                      libjsoncpp.a
                       )
 
 # 解决 Windows 使用 asio库 报错: undefined reference to `__imp_WSAStartup'

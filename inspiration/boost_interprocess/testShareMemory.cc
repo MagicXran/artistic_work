@@ -394,7 +394,7 @@ int main_shm(int argc , char **argv) {
 //    read_shared_mem_win(name);
 //    release(name);
 
-//    const char *filename = R"(C:\Projects\artistic_work\inspiration\shareMemory\mapped_file.h)";
+//    const char *filename = R"(C:\Projects\artistic_work\inspiration\boost_interprocess\mapped_file.h)";
 //    create_file_mapping(filename);
 //    read_file_mapping(filename);
 //    if (boost::interprocess::file_mapping::remove(filename))

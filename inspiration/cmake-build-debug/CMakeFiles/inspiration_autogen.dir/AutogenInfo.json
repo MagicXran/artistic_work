@@ -114,6 +114,7 @@
 		"C:/Projects/artistic_work/inspiration/cmake-build-debug",
 		"C:/Projects/artistic_work/inspiration",
 		"C:/boost_1_69_0",
+		"C:/Projects/artistic_work/inspiration/include",
 		"C:/Apps/Python/include",
 		"C:/Program Files (x86)/glog/include",
 		"C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include",
@@ -153,11 +154,7 @@
 	"SETTINGS_FILE" : "C:/Projects/artistic_work/inspiration/cmake-build-debug/CMakeFiles/inspiration_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[
-			"C:/Projects/artistic_work/inspiration/loger/glog_test.cc",
-			"MU",
-			null
-		]
+		[ "C:/Projects/artistic_work/inspiration/asio/asyn_asio.cc", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

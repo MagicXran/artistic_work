@@ -1,0 +1,15 @@
+{
+  "config_info" : {
+    "name" : "Gloger" ,
+    "output_path" : "C:/Projects/artistic_work/inspiration/loger" ,
+    "logbufsecs" : 0 ,
+    "max_log_size" : 100 ,
+    "stop_logging_if_full_disk" : true ,
+    "alsologtostderr" : true ,
+    "colorlogtostderr" : true ,
+    "stderrthreshold" : 2 ,
+    "log_prefix" : true ,
+    "log_year_in_prefix" : true ,
+    "timestamp_in_logfile_name" : false
+  }
+}
