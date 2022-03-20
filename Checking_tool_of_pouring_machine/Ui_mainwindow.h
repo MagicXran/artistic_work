@@ -36,7 +36,7 @@ public:
     QWidget *centralWidget;
     QGridLayout *gridLayout_11;
     QTextEdit *text_log;
-    QTabWidget *table;
+    QTabWidget *tabWidget;
     QWidget *tab;
     QGridLayout *gridLayout_13;
     QGridLayout *gridLayout_6;
@@ -60,12 +60,15 @@ public:
     QWidget *tab_3;
     QGridLayout *gridLayout_9;
     QGroupBox *groupBox_3;
-    QGridLayout *gridLayout_8;
-    QVBoxLayout *verticalLayout_6;
+    QGridLayout *gridLayout_16;
+    QGridLayout *gridLayout_15;
     QLineEdit *text_main_L;
-    QLineEdit *text_main_radius;
     QLineEdit *text_main_volume;
+    QLineEdit *text_main_radius;
     QComboBox *comboBox_kou;
+    QPushButton *btn_calc_main;
+    QWidget *tab_2;
+    QGridLayout *gridLayout_8;
     QGridLayout *gridLayout_7;
     QLineEdit *text_sub_area;
     QLabel *tbl4;
@@ -135,8 +138,8 @@ public:
 
         gridLayout_11->addWidget(text_log, 1, 0, 1, 1);
 
-        table = new QTabWidget(centralWidget);
-        table->setObjectName(QString::fromUtf8("table"));
+        tabWidget = new QTabWidget(centralWidget);
+        tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
         tab = new QWidget();
         tab->setObjectName(QString::fromUtf8("tab"));
         gridLayout_13 = new QGridLayout(tab);
@@ -277,7 +280,7 @@ public:
 
         gridLayout_13->addLayout(gridLayout_6, 0, 0, 1, 1);
 
-        table->addTab(tab, QString());
+        tabWidget->addTab(tab, QString());
         tab_3 = new QWidget();
         tab_3->setObjectName(QString::fromUtf8("tab_3"));
         gridLayout_9 = new QGridLayout(tab_3);
@@ -288,27 +291,19 @@ public:
         groupBox_3->setObjectName(QString::fromUtf8("groupBox_3"));
         sizePolicy.setHeightForWidth(groupBox_3->sizePolicy().hasHeightForWidth());
         groupBox_3->setSizePolicy(sizePolicy);
-        gridLayout_8 = new QGridLayout(groupBox_3);
-        gridLayout_8->setSpacing(6);
-        gridLayout_8->setContentsMargins(11, 11, 11, 11);
-        gridLayout_8->setObjectName(QString::fromUtf8("gridLayout_8"));
-        verticalLayout_6 = new QVBoxLayout();
-        verticalLayout_6->setSpacing(6);
-        verticalLayout_6->setObjectName(QString::fromUtf8("verticalLayout_6"));
+        gridLayout_16 = new QGridLayout(groupBox_3);
+        gridLayout_16->setSpacing(6);
+        gridLayout_16->setContentsMargins(11, 11, 11, 11);
+        gridLayout_16->setObjectName(QString::fromUtf8("gridLayout_16"));
+        gridLayout_15 = new QGridLayout();
+        gridLayout_15->setSpacing(6);
+        gridLayout_15->setObjectName(QString::fromUtf8("gridLayout_15"));
         text_main_L = new QLineEdit(groupBox_3);
         text_main_L->setObjectName(QString::fromUtf8("text_main_L"));
         sizePolicy.setHeightForWidth(text_main_L->sizePolicy().hasHeightForWidth());
         text_main_L->setSizePolicy(sizePolicy);
 
-        verticalLayout_6->addWidget(text_main_L);
-
-        text_main_radius = new QLineEdit(groupBox_3);
-        text_main_radius->setObjectName(QString::fromUtf8("text_main_radius"));
-        sizePolicy.setHeightForWidth(text_main_radius->sizePolicy().hasHeightForWidth());
-        text_main_radius->setSizePolicy(sizePolicy);
-        text_main_radius->setReadOnly(true);
-
-        verticalLayout_6->addWidget(text_main_radius);
+        gridLayout_15->addWidget(text_main_L, 0, 0, 1, 1);
 
         text_main_volume = new QLineEdit(groupBox_3);
         text_main_volume->setObjectName(QString::fromUtf8("text_main_volume"));
@@ -317,29 +312,54 @@ public:
         text_main_volume->setSizePolicy(sizePolicy);
         text_main_volume->setReadOnly(true);
 
-        verticalLayout_6->addWidget(text_main_volume);
+        gridLayout_15->addWidget(text_main_volume, 0, 1, 1, 1);
+
+        text_main_radius = new QLineEdit(groupBox_3);
+        text_main_radius->setObjectName(QString::fromUtf8("text_main_radius"));
+        sizePolicy.setHeightForWidth(text_main_radius->sizePolicy().hasHeightForWidth());
+        text_main_radius->setSizePolicy(sizePolicy);
+        text_main_radius->setReadOnly(true);
+
+        gridLayout_15->addWidget(text_main_radius, 1, 0, 1, 1);
 
         comboBox_kou = new QComboBox(groupBox_3);
         comboBox_kou->setObjectName(QString::fromUtf8("comboBox_kou"));
         sizePolicy.setHeightForWidth(comboBox_kou->sizePolicy().hasHeightForWidth());
         comboBox_kou->setSizePolicy(sizePolicy);
 
-        verticalLayout_6->addWidget(comboBox_kou);
+        gridLayout_15->addWidget(comboBox_kou, 1, 1, 1, 1);
+
+        btn_calc_main = new QPushButton(groupBox_3);
+        btn_calc_main->setObjectName(QString::fromUtf8("btn_calc_main"));
+        sizePolicy.setHeightForWidth(btn_calc_main->sizePolicy().hasHeightForWidth());
+        btn_calc_main->setSizePolicy(sizePolicy);
+
+        gridLayout_15->addWidget(btn_calc_main, 2, 0, 1, 2);
 
 
-        gridLayout_8->addLayout(verticalLayout_6, 0, 0, 1, 1);
+        gridLayout_16->addLayout(gridLayout_15, 0, 0, 1, 1);
 
+
+        gridLayout_9->addWidget(groupBox_3, 0, 0, 1, 1);
+
+        tabWidget->addTab(tab_3, QString());
+        tab_2 = new QWidget();
+        tab_2->setObjectName(QString::fromUtf8("tab_2"));
+        gridLayout_8 = new QGridLayout(tab_2);
+        gridLayout_8->setSpacing(6);
+        gridLayout_8->setContentsMargins(11, 11, 11, 11);
+        gridLayout_8->setObjectName(QString::fromUtf8("gridLayout_8"));
         gridLayout_7 = new QGridLayout();
         gridLayout_7->setSpacing(6);
         gridLayout_7->setObjectName(QString::fromUtf8("gridLayout_7"));
-        text_sub_area = new QLineEdit(groupBox_3);
+        text_sub_area = new QLineEdit(tab_2);
         text_sub_area->setObjectName(QString::fromUtf8("text_sub_area"));
         sizePolicy.setHeightForWidth(text_sub_area->sizePolicy().hasHeightForWidth());
         text_sub_area->setSizePolicy(sizePolicy);
 
         gridLayout_7->addWidget(text_sub_area, 1, 0, 1, 1);
 
-        tbl4 = new QLabel(groupBox_3);
+        tbl4 = new QLabel(tab_2);
         tbl4->setObjectName(QString::fromUtf8("tbl4"));
         sizePolicy.setHeightForWidth(tbl4->sizePolicy().hasHeightForWidth());
         tbl4->setSizePolicy(sizePolicy);
@@ -347,14 +367,14 @@ public:
 
         gridLayout_7->addWidget(tbl4, 1, 1, 1, 1);
 
-        text_sub_L = new QLineEdit(groupBox_3);
+        text_sub_L = new QLineEdit(tab_2);
         text_sub_L->setObjectName(QString::fromUtf8("text_sub_L"));
         sizePolicy.setHeightForWidth(text_sub_L->sizePolicy().hasHeightForWidth());
         text_sub_L->setSizePolicy(sizePolicy);
 
         gridLayout_7->addWidget(text_sub_L, 0, 0, 1, 1);
 
-        text_sub_volume = new QLineEdit(groupBox_3);
+        text_sub_volume = new QLineEdit(tab_2);
         text_sub_volume->setObjectName(QString::fromUtf8("text_sub_volume"));
         text_sub_volume->setEnabled(true);
         sizePolicy.setHeightForWidth(text_sub_volume->sizePolicy().hasHeightForWidth());
@@ -363,7 +383,7 @@ public:
 
         gridLayout_7->addWidget(text_sub_volume, 2, 0, 1, 1);
 
-        text_sub_size = new QLineEdit(groupBox_3);
+        text_sub_size = new QLineEdit(tab_2);
         text_sub_size->setObjectName(QString::fromUtf8("text_sub_size"));
         sizePolicy.setHeightForWidth(text_sub_size->sizePolicy().hasHeightForWidth());
         text_sub_size->setSizePolicy(sizePolicy);
@@ -371,7 +391,7 @@ public:
 
         gridLayout_7->addWidget(text_sub_size, 3, 0, 1, 1);
 
-        btn_calc_gating_system = new QPushButton(groupBox_3);
+        btn_calc_gating_system = new QPushButton(tab_2);
         btn_calc_gating_system->setObjectName(QString::fromUtf8("btn_calc_gating_system"));
         sizePolicy.setHeightForWidth(btn_calc_gating_system->sizePolicy().hasHeightForWidth());
         btn_calc_gating_system->setSizePolicy(sizePolicy);
@@ -380,12 +400,9 @@ public:
         gridLayout_7->addWidget(btn_calc_gating_system, 2, 1, 2, 1);
 
 
-        gridLayout_8->addLayout(gridLayout_7, 0, 1, 1, 1);
+        gridLayout_8->addLayout(gridLayout_7, 0, 0, 1, 1);
 
-
-        gridLayout_9->addWidget(groupBox_3, 0, 0, 1, 1);
-
-        table->addTab(tab_3, QString());
+        tabWidget->addTab(tab_2, QString());
         tab_4 = new QWidget();
         tab_4->setObjectName(QString::fromUtf8("tab_4"));
         gridLayout_14 = new QGridLayout(tab_4);
@@ -616,9 +633,9 @@ public:
 
         gridLayout_14->addWidget(groupBox_4, 0, 0, 1, 1);
 
-        table->addTab(tab_4, QString());
+        tabWidget->addTab(tab_4, QString());
 
-        gridLayout_11->addWidget(table, 0, 0, 1, 1);
+        gridLayout_11->addWidget(tabWidget, 0, 0, 1, 1);
 
         MainWindow->setCentralWidget(centralWidget);
         mainToolBar = new QToolBar(MainWindow);
@@ -634,7 +651,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        table->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -663,14 +680,16 @@ public:
         btn_suo_force->setText(QCoreApplication::translate("MainWindow", "\351\224\201\346\250\241\345\212\233\346\240\241\351\252\214", nullptr));
         text_f_grow->setText(QString());
         text_f_grow->setPlaceholderText(QCoreApplication::translate("MainWindow", "F\346\266\250", nullptr));
-        table->setTabText(table->indexOf(tab), QCoreApplication::translate("MainWindow", "\351\200\211\345\236\213\344\270\216\346\240\241\346\240\270", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("MainWindow", "\351\200\211\345\236\213\344\270\216\346\240\241\346\240\270", nullptr));
         groupBox_3->setTitle(QCoreApplication::translate("MainWindow", "\346\265\207\346\263\250\347\263\273\347\273\237\350\256\276\350\256\241\350\256\241\347\256\227", nullptr));
         text_main_L->setText(QString());
         text_main_L->setPlaceholderText(QCoreApplication::translate("MainWindow", "\350\257\267\350\276\223\345\205\245\344\270\273\346\265\201\351\201\223\351\225\277\345\272\246", nullptr));
-        text_main_radius->setText(QString());
-        text_main_radius->setPlaceholderText(QCoreApplication::translate("MainWindow", "\344\270\273\346\265\201\351\201\223\345\275\223\351\207\217\345\215\212\345\276\204", nullptr));
         text_main_volume->setText(QString());
         text_main_volume->setPlaceholderText(QCoreApplication::translate("MainWindow", "\344\270\273\346\265\201\351\201\223\347\232\204\345\207\235\346\226\231\344\275\223\347\247\257", nullptr));
+        text_main_radius->setText(QString());
+        text_main_radius->setPlaceholderText(QCoreApplication::translate("MainWindow", "\344\270\273\346\265\201\351\201\223\345\275\223\351\207\217\345\215\212\345\276\204", nullptr));
+        btn_calc_main->setText(QCoreApplication::translate("MainWindow", "\350\256\241\347\256\227", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_3), QCoreApplication::translate("MainWindow", "\344\270\273\346\265\201\351\201\223", nullptr));
         text_sub_area->setText(QString());
         text_sub_area->setPlaceholderText(QCoreApplication::translate("MainWindow", "\350\257\267\350\276\223\345\205\245\345\210\206\346\265\201\351\201\223\346\250\252\346\210\252\351\235\242\351\235\242\347\247\257", nullptr));
         tbl4->setText(QCoreApplication::translate("MainWindow", "\345\210\206\346\265\201\351\201\223\347\232\204\346\250\252\346\210\252\351\235\242\345\260\272\345\257\270\350\241\250", nullptr));
@@ -681,7 +700,7 @@ public:
         text_sub_size->setText(QString());
         text_sub_size->setPlaceholderText(QCoreApplication::translate("MainWindow", "\345\210\206\346\265\201\351\201\223\345\260\272\345\257\270", nullptr));
         btn_calc_gating_system->setText(QCoreApplication::translate("MainWindow", "\350\256\241\347\256\227", nullptr));
-        table->setTabText(table->indexOf(tab_3), QCoreApplication::translate("MainWindow", "\346\265\207\346\263\250\347\263\273\347\273\237", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("MainWindow", "\345\210\206\346\265\201\351\201\223\350\256\276\350\256\241", nullptr));
         groupBox_4->setTitle(QCoreApplication::translate("MainWindow", "\345\206\267\345\215\264\347\263\273\347\273\237\350\256\241\347\256\227", nullptr));
         text_Qs->setText(QString());
         text_Qs->setPlaceholderText(QCoreApplication::translate("MainWindow", "\350\257\267\346\237\245\350\241\250\350\276\223\345\205\245Qs", nullptr));
@@ -723,7 +742,7 @@ public:
         text_flow_rate->setText(QString());
         text_flow_rate->setPlaceholderText(QCoreApplication::translate("MainWindow", "\345\206\267\345\215\264\346\260\264\345\234\250\347\256\241\345\206\205\347\232\204\346\265\201\351\200\237", nullptr));
         btn_calc_cool_system->setText(QCoreApplication::translate("MainWindow", "\350\256\241\347\256\227", nullptr));
-        table->setTabText(table->indexOf(tab_4), QCoreApplication::translate("MainWindow", "\345\206\267\345\215\264\347\263\273\347\273\237\346\240\241\351\252\214", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_4), QCoreApplication::translate("MainWindow", "\345\206\267\345\215\264\347\263\273\347\273\237\346\240\241\351\252\214", nullptr));
     } // retranslateUi
 
 };

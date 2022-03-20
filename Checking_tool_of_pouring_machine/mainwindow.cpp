@@ -94,16 +94,27 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) , ui(new Ui::MainW
             ui->text_log->append("<span style=color:'green'> 实际注射压力 ＜  标准公称压力! </span>");
     });
 
-    //浇注系统计算
+    //浇注分流道系统计算
     connect(ui->btn_calc_gating_system , &QPushButton::clicked , [=]() {
-        ui->text_log->append("<span style=color:'green'> 浇注系统计算 </span>");
+        ui->text_log->append("<span style=color:'green'> 分流道系统计算 </span>");
 
-        calc_->setMainL(ui->text_main_L->text().toDouble());
         calc_->setSubL(ui->text_sub_L->text().toDouble());
         calc_->setSubA(ui->text_sub_area->text().toDouble());
 
-        ui->text_log->append("<span style=color:'green'> 已选择 </span>");
+        auto sebD = calc_->calc_subD();
+        auto sebV = calc_->calc_subV();
+        ui->text_sub_size->setText(QString::number(sebD));
+        ui->text_sub_volume->setText(QString::number(sebV));
 
+        ui->text_log->append("<span style=color:'green'> 分流道尺寸: </span>" + QString::number(sebD));
+        ui->text_log->append("<span style=color:'green'> 分流道凝料体积: </span>" + QString::number(sebV));
+    });
+
+    //主流道设计
+    connect(ui->btn_calc_main , &QPushButton::clicked , [=]() {
+        ui->text_log->append("<span style=color:'green'> 主流道浇注系统计算 </span>");
+
+        calc_->setMainL(ui->text_main_L->text().toDouble());
 
         auto hole = parser_->getModel(ui->comboBox_machine->currentIndex() + 1)["hole_radius"].asDouble();
         ui->text_log->append("<span style=color:'green'> 主流道小端半径: </span>" + QString::number(calc_->calc_main_r(hole)));
@@ -122,11 +133,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) , ui(new Ui::MainW
         ui->text_main_radius->setText(QString::number(main_Rn));
 
         ui->text_main_volume->setText(QString::number(calc_->calc_main_v()));
-        ui->text_sub_volume->setText(QString::number(calc_->calc_subV()));
-        ui->text_sub_size->setText(QString::number(calc_->calc_subD()));
     });
-
-
     // 锁模力计算
     connect(ui->btn_suo_force , &QPushButton::clicked , [=]() {
 
