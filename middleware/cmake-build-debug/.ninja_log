@@ -1,8 +1,13 @@
 # ninja log v5
-2	325	6682807292635808	build.ninja	36543b807aec9fa4
-1	92	0	CMakeFiles/middleware_autogen	3b5675c94651bee2
-1	92	0	middleware_autogen/mocs_compilation.cpp	3b5675c94651bee2
-1	92	0	C:/Projects/artistic_work/middleware/cmake-build-debug/CMakeFiles/middleware_autogen	3b5675c94651bee2
-1	92	0	C:/Projects/artistic_work/middleware/cmake-build-debug/middleware_autogen/mocs_compilation.cpp	3b5675c94651bee2
-96	144	6682807294345775	CMakeFiles/middleware.dir/middleware_autogen/mocs_compilation.cpp.obj	7f7dfa126bbb210e
-93	1655	6682807309455120	CMakeFiles/middleware.dir/main.cpp.obj	77d8ee872d657eb7
+1	79	0	CMakeFiles/middleware_autogen	eeebad567b4d0187
+1	79	0	middleware_autogen/mocs_compilation.cpp	eeebad567b4d0187
+1	79	0	C:/Projects/artistic_work/middleware/cmake-build-debug/CMakeFiles/middleware_autogen	eeebad567b4d0187
+82	1538	6697487889940933	CMakeFiles/middleware.dir/main.cpp.obj	6640ac553aa5287c
+1	79	0	C:/Projects/artistic_work/middleware/cmake-build-debug/middleware_autogen/mocs_compilation.cpp	eeebad567b4d0187
+80	121	6697487875858349	CMakeFiles/middleware.dir/middleware_autogen/mocs_compilation.cpp.obj	e1d155744f3653f6
+4	74	0	CMakeFiles/middleware_autogen	eeebad567b4d0187
+4	74	0	middleware_autogen/mocs_compilation.cpp	eeebad567b4d0187
+4	74	0	C:/Projects/artistic_work/middleware/cmake-build-debug/CMakeFiles/middleware_autogen	eeebad567b4d0187
+4	74	0	C:/Projects/artistic_work/middleware/cmake-build-debug/middleware_autogen/mocs_compilation.cpp	eeebad567b4d0187
+76	120	6697488174528298	CMakeFiles/middleware.dir/middleware_autogen/mocs_compilation.cpp.obj	7f7dfa126bbb210e
+79	1363	6697488187042893	CMakeFiles/middleware.dir/main.cpp.obj	77d8ee872d657eb7

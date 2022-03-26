@@ -62,7 +62,8 @@ link_directories(${LINK_DIR})
 link_libraries(libjsoncpp.a)
 
 
-set(SOURCE_FILES  asio/asyn_asio.cc)
+
+set(SOURCE_FILES   test/occi.cc)
 #set(SOURCE_FILES main.cpp accessor/file_accessor.hpp correspondence/synasio.cc correspondence/synasio.h correspondence/communication.h correspondence/chat_message.hpp correspondence/chat_client.cc correspondence/chat_server.cc ui/network_socket.cc ui/network_socket.h ui/network_socket.ui boost_interprocess/testShareMemory.cc loger/glog_test.cc)
 add_executable(inspiration ${RC_FILES} ${SOURCE_FILES} ${UI_FILES} ${QRC_FILES})
 target_link_libraries(inspiration

@@ -14,6 +14,7 @@ find_package(Qt5 COMPONENTS
              Widgets
              REQUIRED)
 
+
 add_executable(middleware main.cpp)
 target_link_libraries(middleware
                       Qt5::Core
