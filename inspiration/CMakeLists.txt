@@ -24,9 +24,11 @@ set(QRC_FILES)
 ###########################################################Boost
 set(Boost_DEBUG on)
 set(Boost_DETAILED_FAILURE_MSG ON)
-set(BOOST_ROOT C:\\boost_1_69_0)
+#set(BOOST_ROOT C:\\boost_1_69_0)
+set(BOOST_ROOT C:/Third_party_library/boost_1_76_0)
 set(BOOST_INCLUDEDIR ${BOOST_ROOT})
-set(BOOST_LIBRARYDIR C:\\boost_1_69_0\\stage\\lib)
+#set(BOOST_LIBRARYDIR C:\\boost_1_69_0\\stage\\lib)
+set(BOOST_LIBRARYDIR C:/Third_party_library/boost_1_76_0/stage/lib)
 set(Boost_NO_SYSTEM_PATHS ON) #只搜索上语句设置的搜索路径
 
 find_package(Boost COMPONENTS REQUIRED date_time regex system python39)
@@ -63,8 +65,10 @@ link_libraries(libjsoncpp.a)
 
 
 
-set(SOURCE_FILES   test/occi.cc)
-#set(SOURCE_FILES main.cpp accessor/file_accessor.hpp correspondence/synasio.cc correspondence/synasio.h correspondence/communication.h correspondence/chat_message.hpp correspondence/chat_client.cc correspondence/chat_server.cc ui/network_socket.cc ui/network_socket.h ui/network_socket.ui boost_interprocess/testShareMemory.cc loger/glog_test.cc)
+set(SOURCE_FILES reflection/test_flection.hpp reflection/testMain.cc reflection/Reflector.hpp)
+#set(SOURCE_FILES boost_interprocess/testShareMemory.cc boost_interprocess/test_main.cc boost_interprocess/messages_queue.cc boost_interprocess/messages_queue.h boost_interprocess/file_mapped.hpp boost_interprocess/mapped_file.h)
+#message(${SOURCE_FILES})
+#set(SOURCE_FILES invokePython/invokePython.cpp accessor/file_accessor.hpp correspondence/synasio.cc correspondence/synasio.h correspondence/communication.h correspondence/chat_message.hpp correspondence/chat_client.cc correspondence/chat_server.cc ui/network_socket.cc ui/network_socket.h ui/network_socket.ui boost_interprocess/testShareMemory.cc loger/glog_test.cc)
 add_executable(inspiration ${RC_FILES} ${SOURCE_FILES} ${UI_FILES} ${QRC_FILES})
 target_link_libraries(inspiration
                       Qt5::Widgets

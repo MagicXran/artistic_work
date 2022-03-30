@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.21"
@@ -20,7 +20,7 @@
 					]
 				}
 			],
-			"name" : "Debug",
+			"name" : "Release",
 			"projects" : 
 			[
 				{
@@ -41,14 +41,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "inspiration::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-inspiration-Debug-815bde6d0aa49e37d56a.json",
+					"jsonFile" : "target-inspiration-Release-a9042bfb1cf84545cc1c.json",
 					"name" : "inspiration",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "inspiration_autogen::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-inspiration_autogen-Debug-1547dafb16adbf903160.json",
+					"jsonFile" : "target-inspiration_autogen-Release-38d8c95543561487e895.json",
 					"name" : "inspiration_autogen",
 					"projectIndex" : 0
 				}
@@ -58,7 +58,7 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Projects/artistic_work/inspiration/cmake-build-debug",
+		"build" : "C:/Projects/artistic_work/inspiration/cmake-build-release",
 		"source" : "C:/Projects/artistic_work/inspiration"
 	},
 	"version" : 

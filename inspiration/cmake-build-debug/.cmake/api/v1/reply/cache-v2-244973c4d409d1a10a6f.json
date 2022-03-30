@@ -15,7 +15,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/boost_1_69_0/stage/lib/libboost_date_time-mgw73-mt-d-1_69.a"
+			"value" : "C:/Third_party_library/boost_1_76_0/stage/lib/libboost_date_time-mgw7-mt-d-1_76.a"
 		},
 		{
 			"name" : "Boost_DATE_TIME_LIBRARY_RELEASE",
@@ -31,7 +31,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/boost_1_69_0/stage/lib/libboost_date_time-mgw73-mt-1_69.a"
+			"value" : "C:/Third_party_library/boost_1_76_0/stage/lib/libboost_date_time-mgw7-mt-1_76.a"
 		},
 		{
 			"name" : "Boost_DIR",
@@ -63,7 +63,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/boost_1_69_0"
+			"value" : "C:/Third_party_library/boost_1_76_0"
 		},
 		{
 			"name" : "Boost_LIBRARY_DIR_DEBUG",
@@ -79,7 +79,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/boost_1_69_0/stage/lib"
+			"value" : "C:/Third_party_library/boost_1_76_0/stage/lib"
 		},
 		{
 			"name" : "Boost_LIBRARY_DIR_RELEASE",
@@ -95,7 +95,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/boost_1_69_0/stage/lib"
+			"value" : "C:/Third_party_library/boost_1_76_0/stage/lib"
 		},
 		{
 			"name" : "Boost_PYTHON39_LIBRARY_DEBUG",
@@ -111,7 +111,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/boost_1_69_0/stage/lib/libboost_python39-mgw73-mt-d-1_69.a"
+			"value" : "C:/Third_party_library/boost_1_76_0/stage/lib/libboost_python39-mgw7-mt-d-1_76.a"
 		},
 		{
 			"name" : "Boost_PYTHON39_LIBRARY_RELEASE",
@@ -127,7 +127,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/boost_1_69_0/stage/lib/libboost_python39-mgw73-mt-1_69.a"
+			"value" : "C:/Third_party_library/boost_1_76_0/stage/lib/libboost_python39-mgw7-mt-1_76.a"
 		},
 		{
 			"name" : "Boost_REGEX_LIBRARY_DEBUG",
@@ -143,7 +143,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/boost_1_69_0/stage/lib/libboost_regex-mgw73-mt-d-1_69.a"
+			"value" : "C:/Third_party_library/boost_1_76_0/stage/lib/libboost_regex-mgw7-mt-d-1_76.a"
 		},
 		{
 			"name" : "Boost_REGEX_LIBRARY_RELEASE",
@@ -159,7 +159,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/boost_1_69_0/stage/lib/libboost_regex-mgw73-mt-1_69.a"
+			"value" : "C:/Third_party_library/boost_1_76_0/stage/lib/libboost_regex-mgw7-mt-1_76.a"
 		},
 		{
 			"name" : "Boost_SYSTEM_LIBRARY_DEBUG",
@@ -175,7 +175,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/boost_1_69_0/stage/lib/libboost_system-mgw73-mt-d-1_69.a"
+			"value" : "C:/Third_party_library/boost_1_76_0/stage/lib/libboost_system-mgw7-mt-d-1_76.a"
 		},
 		{
 			"name" : "Boost_SYSTEM_LIBRARY_RELEASE",
@@ -191,7 +191,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/boost_1_69_0/stage/lib/libboost_system-mgw73-mt-1_69.a"
+			"value" : "C:/Third_party_library/boost_1_76_0/stage/lib/libboost_system-mgw7-mt-1_76.a"
 		},
 		{
 			"name" : "CMAKE_ADDR2LINE",
@@ -235,7 +235,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "Release"
+			"value" : "Debug"
 		},
 		{
 			"name" : "CMAKE_CACHEFILE_DIR",
@@ -247,7 +247,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Projects/artistic_work/inspiration/cmake-build-release"
+			"value" : "c:/Projects/artistic_work/inspiration/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -1431,7 +1431,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[C:/boost_1_69_0][cfound components: date_time regex system python39 ][v1.69.0()]"
+			"value" : "[C:/Third_party_library/boost_1_76_0][cfound components: date_time regex system python39 ][v1.76.0()]"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Python3",
@@ -1491,7 +1491,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:\\boost_1_69_0"
+			"value" : "C:/Third_party_library/boost_1_76_0"
 		},
 		{
 			"name" : "_BOOST_LIBRARYDIR_LAST",
@@ -1503,7 +1503,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:\\boost_1_69_0\\stage\\lib"
+			"value" : "C:/Third_party_library/boost_1_76_0/stage/lib"
 		},
 		{
 			"name" : "_BOOST_ROOT_LAST",
@@ -1515,7 +1515,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:\\boost_1_69_0"
+			"value" : "C:/Third_party_library/boost_1_76_0"
 		},
 		{
 			"name" : "_Boost_COMPONENTS_SEARCHED",
@@ -1539,7 +1539,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/boost_1_69_0"
+			"value" : "C:/Third_party_library/boost_1_76_0"
 		},
 		{
 			"name" : "_Boost_LIBRARY_DIR_DEBUG_LAST",
@@ -1551,7 +1551,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/boost_1_69_0/stage/lib"
+			"value" : "C:/Third_party_library/boost_1_76_0/stage/lib"
 		},
 		{
 			"name" : "_Boost_LIBRARY_DIR_RELEASE_LAST",
@@ -1563,7 +1563,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/boost_1_69_0/stage/lib"
+			"value" : "C:/Third_party_library/boost_1_76_0/stage/lib"
 		},
 		{
 			"name" : "_Boost_NAMESPACE_LAST",
@@ -1731,7 +1731,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Projects/artistic_work/inspiration/cmake-build-release"
+			"value" : "C:/Projects/artistic_work/inspiration/cmake-build-debug"
 		},
 		{
 			"name" : "inspiration_IS_TOP_LEVEL",

@@ -6,6 +6,7 @@
 
 #include <iostream>
 #include <thread>
+#include <chrono>
 #include <boost/interprocess/shared_memory_object.hpp>
 #include <boost/interprocess/mapped_region.hpp>
 #include <boost/interprocess/windows_shared_memory.hpp>
@@ -264,10 +265,11 @@ void send_message_queue(const char *msg_name) {
         );
 
         //Send 100 numbers
-        for (int i = 0 ; i < 20 ; ++i) {
-//        int i = 0;
-//        while (true) {
+//        for (int i = 0 ; i < 20 ; ++i) {
+        int i = 0;
+        while (true) {
             mq.send(&i , sizeof(i) , 0);
+//                std::this_thread::sleep_for(std::chrono::milliseconds(5));
         }
 
         std::cout << "发送陈公公" << std::endl;
@@ -323,14 +325,21 @@ void send_message_queue_DIY(const char *msg_name) {
                 , MESSAGE_NUM                       //max message number
                 , sizeof(test_datas)               //max message size
         );
-        test_datas datas {};
-        sprintf_s(datas.name , sizeof(datas.name) , "%s" , "午休啊");
-        sprintf_s(datas.sender , sizeof(datas.sender) , "%s" , "许哦住");
-        datas.u_member.d_ = 111.3;
 
-        while (mq.try_send(&datas , sizeof(datas) , 0)) {
-            std::cout << "发送成功" << std::endl;
+        test_datas datas {};
+        for (int i = 0 ; i < 100 ; ++i) {
+            sprintf_s(datas.name , sizeof(datas.name) , "%s" , "午休啊");
+            sprintf_s(datas.sender , sizeof(datas.sender) , "%s" , "许哦住");
+            datas.u_member.d_ = 111.3;
+
+//            while (mq.try_send(&datas , sizeof(datas) , 0)) {
+            mq.send(&datas , sizeof(test_datas) , 1);
+            std::cout << "发送成功:" << i << std::endl;
+//            }
+
+            std::this_thread::sleep_for(std::chrono::milliseconds(5));
         }
+
 //        char aa[122];
 //        std::cin >> aa;
 
@@ -371,8 +380,8 @@ void rec_msgQueue_DIY(const char *name) {
 }
 
 int main_shm(int argc , char **argv) {
-    const char *name = "monika";
-//    const char *name = "Global\\monika";
+//    const char *name = "monika";
+    const char *name = "Global\\monika";
 //    write_shared_memory(name);
 //    read_shared_mem(name);
 //
@@ -404,8 +413,12 @@ int main_shm(int argc , char **argv) {
 //    rec_msgQueue(name);
 
 //    send_message_queue_DIY(name);
-    rec_msgQueue_DIY(name);
-    if (boost::interprocess::message_queue::remove(name))
-        std::cout << "释放成功" << std::endl;
+//    std::thread send(send_message_queue_DIY , name);
+//    rec_msgQueue_DIY(name);
+
+//    send.join();
+//    if (boost::interprocess::message_queue::remove(name))
+//        std::cout << "释放成功" << std::endl;
+    std::cout << name << std::endl;
 
 }

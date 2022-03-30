@@ -90,7 +90,21 @@
 	"CMAKE_SOURCE_DIR" : "C:/Projects/artistic_work/inspiration",
 	"DEP_FILE" : "",
 	"DEP_FILE_RULE_NAME" : "",
-	"HEADERS" : [],
+	"HEADERS" : 
+	[
+		[
+			"C:/Projects/artistic_work/inspiration/reflection/Reflector.hpp",
+			"MU",
+			"JJOOR7MSNQ/moc_Reflector.cpp",
+			null
+		],
+		[
+			"C:/Projects/artistic_work/inspiration/reflection/test_flection.hpp",
+			"MU",
+			"JJOOR7MSNQ/moc_test_flection.cpp",
+			null
+		]
+	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "C:/Projects/artistic_work/inspiration/cmake-build-debug/inspiration_autogen/include",
 	"MOC_COMPILATION_FILE" : "C:/Projects/artistic_work/inspiration/cmake-build-debug/inspiration_autogen/mocs_compilation.cpp",
@@ -113,7 +127,7 @@
 	[
 		"C:/Projects/artistic_work/inspiration/cmake-build-debug",
 		"C:/Projects/artistic_work/inspiration",
-		"C:/boost_1_69_0",
+		"C:/Third_party_library/boost_1_76_0",
 		"C:/Projects/artistic_work/inspiration/include",
 		"C:/Apps/Python/include",
 		"C:/Program Files (x86)/glog/include",
@@ -154,7 +168,11 @@
 	"SETTINGS_FILE" : "C:/Projects/artistic_work/inspiration/cmake-build-debug/CMakeFiles/inspiration_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "C:/Projects/artistic_work/inspiration/test/occi.cc", "MU", null ]
+		[
+			"C:/Projects/artistic_work/inspiration/reflection/testMain.cc",
+			"MU",
+			null
+		]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

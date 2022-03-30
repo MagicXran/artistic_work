@@ -15,40 +15,40 @@
 ########################
 
 //Boost date_time library (debug)
-Boost_DATE_TIME_LIBRARY_DEBUG:FILEPATH=C:/boost_1_69_0/stage/lib/libboost_date_time-mgw73-mt-d-1_69.a
+Boost_DATE_TIME_LIBRARY_DEBUG:FILEPATH=C:/Third_party_library/boost_1_76_0/stage/lib/libboost_date_time-mgw7-mt-d-1_76.a
 
 //Boost date_time library (release)
-Boost_DATE_TIME_LIBRARY_RELEASE:FILEPATH=C:/boost_1_69_0/stage/lib/libboost_date_time-mgw73-mt-1_69.a
+Boost_DATE_TIME_LIBRARY_RELEASE:FILEPATH=C:/Third_party_library/boost_1_76_0/stage/lib/libboost_date_time-mgw7-mt-1_76.a
 
 //The directory containing a CMake configuration file for Boost.
 Boost_DIR:PATH=Boost_DIR-NOTFOUND
 
 //Path to a file.
-Boost_INCLUDE_DIR:PATH=C:/boost_1_69_0
+Boost_INCLUDE_DIR:PATH=C:/Third_party_library/boost_1_76_0
 
 //Boost library directory DEBUG
-Boost_LIBRARY_DIR_DEBUG:PATH=C:/boost_1_69_0/stage/lib
+Boost_LIBRARY_DIR_DEBUG:PATH=C:/Third_party_library/boost_1_76_0/stage/lib
 
 //Boost library directory RELEASE
-Boost_LIBRARY_DIR_RELEASE:PATH=C:/boost_1_69_0/stage/lib
+Boost_LIBRARY_DIR_RELEASE:PATH=C:/Third_party_library/boost_1_76_0/stage/lib
 
 //Boost python39 library (debug)
-Boost_PYTHON39_LIBRARY_DEBUG:FILEPATH=C:/boost_1_69_0/stage/lib/libboost_python39-mgw73-mt-d-1_69.a
+Boost_PYTHON39_LIBRARY_DEBUG:FILEPATH=C:/Third_party_library/boost_1_76_0/stage/lib/libboost_python39-mgw7-mt-d-1_76.a
 
 //Boost python39 library (release)
-Boost_PYTHON39_LIBRARY_RELEASE:FILEPATH=C:/boost_1_69_0/stage/lib/libboost_python39-mgw73-mt-1_69.a
+Boost_PYTHON39_LIBRARY_RELEASE:FILEPATH=C:/Third_party_library/boost_1_76_0/stage/lib/libboost_python39-mgw7-mt-1_76.a
 
 //Boost regex library (debug)
-Boost_REGEX_LIBRARY_DEBUG:FILEPATH=C:/boost_1_69_0/stage/lib/libboost_regex-mgw73-mt-d-1_69.a
+Boost_REGEX_LIBRARY_DEBUG:FILEPATH=C:/Third_party_library/boost_1_76_0/stage/lib/libboost_regex-mgw7-mt-d-1_76.a
 
 //Boost regex library (release)
-Boost_REGEX_LIBRARY_RELEASE:FILEPATH=C:/boost_1_69_0/stage/lib/libboost_regex-mgw73-mt-1_69.a
+Boost_REGEX_LIBRARY_RELEASE:FILEPATH=C:/Third_party_library/boost_1_76_0/stage/lib/libboost_regex-mgw7-mt-1_76.a
 
 //Boost system library (debug)
-Boost_SYSTEM_LIBRARY_DEBUG:FILEPATH=C:/boost_1_69_0/stage/lib/libboost_system-mgw73-mt-d-1_69.a
+Boost_SYSTEM_LIBRARY_DEBUG:FILEPATH=C:/Third_party_library/boost_1_76_0/stage/lib/libboost_system-mgw7-mt-d-1_76.a
 
 //Boost system library (release)
-Boost_SYSTEM_LIBRARY_RELEASE:FILEPATH=C:/boost_1_69_0/stage/lib/libboost_system-mgw73-mt-1_69.a
+Boost_SYSTEM_LIBRARY_RELEASE:FILEPATH=C:/Third_party_library/boost_1_76_0/stage/lib/libboost_system-mgw7-mt-1_76.a
 
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=C:/Qt/Qt5.14.2/Tools/mingw730_64/bin/addr2line.exe
@@ -472,23 +472,23 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding Boost
-FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[C:/boost_1_69_0][cfound components: date_time regex system python39 ][v1.69.0()]
+FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[C:/Third_party_library/boost_1_76_0][cfound components: date_time regex system python39 ][v1.76.0()]
 //Details about finding Python3
 FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[C:/Apps/Python/python.exe][C:/Apps/Python/libs/python39.lib][C:/Apps/Python/include][cfound components: Interpreter Development Development.Module Development.Embed ][v3.9.8()]
 //Last used BOOST_INCLUDEDIR value.
-_BOOST_INCLUDEDIR_LAST:INTERNAL=C:\boost_1_69_0
+_BOOST_INCLUDEDIR_LAST:INTERNAL=C:/Third_party_library/boost_1_76_0
 //Last used BOOST_LIBRARYDIR value.
-_BOOST_LIBRARYDIR_LAST:INTERNAL=C:\boost_1_69_0\stage\lib
+_BOOST_LIBRARYDIR_LAST:INTERNAL=C:/Third_party_library/boost_1_76_0/stage/lib
 //Last used BOOST_ROOT value.
-_BOOST_ROOT_LAST:INTERNAL=C:\boost_1_69_0
+_BOOST_ROOT_LAST:INTERNAL=C:/Third_party_library/boost_1_76_0
 //Components requested for this build tree.
 _Boost_COMPONENTS_SEARCHED:INTERNAL=date_time;python39;regex;system
 //Last used Boost_INCLUDE_DIR value.
-_Boost_INCLUDE_DIR_LAST:INTERNAL=C:/boost_1_69_0
+_Boost_INCLUDE_DIR_LAST:INTERNAL=C:/Third_party_library/boost_1_76_0
 //Last used Boost_LIBRARY_DIR_DEBUG value.
-_Boost_LIBRARY_DIR_DEBUG_LAST:INTERNAL=C:/boost_1_69_0/stage/lib
+_Boost_LIBRARY_DIR_DEBUG_LAST:INTERNAL=C:/Third_party_library/boost_1_76_0/stage/lib
 //Last used Boost_LIBRARY_DIR_RELEASE value.
-_Boost_LIBRARY_DIR_RELEASE_LAST:INTERNAL=C:/boost_1_69_0/stage/lib
+_Boost_LIBRARY_DIR_RELEASE_LAST:INTERNAL=C:/Third_party_library/boost_1_76_0/stage/lib
 //Last used Boost_NAMESPACE value.
 _Boost_NAMESPACE_LAST:INTERNAL=boost
 //Last used Boost_NO_SYSTEM_PATHS value.
