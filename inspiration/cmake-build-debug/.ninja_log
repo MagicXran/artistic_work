@@ -10,3 +10,13 @@
 48	2235	6702670721195116	CMakeFiles/inspiration.dir/boost_interprocess/test_main.cc.obj	423db0068885efd0
 62	3720	6702628273392489	CMakeFiles/inspiration.dir/boost_interprocess/messages_queue.cc.obj	c4a37a93806eaa39
 42	440	6703236632471021	CMakeFiles/inspiration.dir/flection/testMain.cc.obj	6ea86f077105e8a5
+6	86	0	CMakeFiles/inspiration_autogen	d6cd5ec9b28b41b1
+6	86	0	inspiration_autogen/mocs_compilation.cpp	d6cd5ec9b28b41b1
+6	86	0	C:/Projects/artistic_work/inspiration/cmake-build-debug/CMakeFiles/inspiration_autogen	d6cd5ec9b28b41b1
+6	86	0	C:/Projects/artistic_work/inspiration/cmake-build-debug/inspiration_autogen/mocs_compilation.cpp	d6cd5ec9b28b41b1
+88	1112	6707807000987961	CMakeFiles/inspiration.dir/reflection/testMain.cc.obj	ce831dd736feff62
+1112	1454	6707807004428418	inspiration.exe	a0564dc2c025d59d
+4	48	0	CMakeFiles/inspiration_autogen	d6cd5ec9b28b41b1
+4	48	0	inspiration_autogen/mocs_compilation.cpp	d6cd5ec9b28b41b1
+4	48	0	C:/Projects/artistic_work/inspiration/cmake-build-debug/CMakeFiles/inspiration_autogen	d6cd5ec9b28b41b1
+4	48	0	C:/Projects/artistic_work/inspiration/cmake-build-debug/inspiration_autogen/mocs_compilation.cpp	d6cd5ec9b28b41b1

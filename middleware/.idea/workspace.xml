@@ -45,9 +45,9 @@
     <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="middleware" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="middleware" TARGET_NAME="middleware" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="middleware" RUN_TARGET_NAME="middleware">
@@ -67,6 +67,7 @@
       <workItem from="1646577503271" duration="81000" />
       <workItem from="1646643075469" duration="28000" />
       <workItem from="1648045481674" duration="150000" />
+      <workItem from="1655858086866" duration="99000" />
     </task>
     <servers />
   </component>

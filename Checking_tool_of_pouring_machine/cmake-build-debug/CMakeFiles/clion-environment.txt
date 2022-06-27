@@ -1,4 +1,4 @@
-ToolSet: w64 6.0 (local)@C:\Qt\Qt5.14.2\Tools\mingw730_64
-Options: 
+ToolSet: 16.0 (local)@C:\Program Files (x86)\Microsoft Visual Studio\2019\Community
+Options: msvc.arch=amd64
 
 Options:-DCMAKE_MAKE_PROGRAM=C:/Users/Administrator/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/ninja/win/ninja.exe

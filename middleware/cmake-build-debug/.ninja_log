@@ -1,13 +1,13 @@
 # ninja log v5
-1	79	0	CMakeFiles/middleware_autogen	eeebad567b4d0187
-1	79	0	middleware_autogen/mocs_compilation.cpp	eeebad567b4d0187
-1	79	0	C:/Projects/artistic_work/middleware/cmake-build-debug/CMakeFiles/middleware_autogen	eeebad567b4d0187
-82	1538	6697487889940933	CMakeFiles/middleware.dir/main.cpp.obj	6640ac553aa5287c
-1	79	0	C:/Projects/artistic_work/middleware/cmake-build-debug/middleware_autogen/mocs_compilation.cpp	eeebad567b4d0187
-80	121	6697487875858349	CMakeFiles/middleware.dir/middleware_autogen/mocs_compilation.cpp.obj	e1d155744f3653f6
-4	74	0	CMakeFiles/middleware_autogen	eeebad567b4d0187
-4	74	0	middleware_autogen/mocs_compilation.cpp	eeebad567b4d0187
-4	74	0	C:/Projects/artistic_work/middleware/cmake-build-debug/CMakeFiles/middleware_autogen	eeebad567b4d0187
-4	74	0	C:/Projects/artistic_work/middleware/cmake-build-debug/middleware_autogen/mocs_compilation.cpp	eeebad567b4d0187
-76	120	6697488174528298	CMakeFiles/middleware.dir/middleware_autogen/mocs_compilation.cpp.obj	7f7dfa126bbb210e
-79	1363	6697488187042893	CMakeFiles/middleware.dir/main.cpp.obj	77d8ee872d657eb7
+7	68	0	CMakeFiles/middleware_autogen	eeebad567b4d0187
+7	68	0	middleware_autogen/mocs_compilation.cpp	eeebad567b4d0187
+7	68	0	C:/Projects/artistic_work/middleware/cmake-build-debug/CMakeFiles/middleware_autogen	eeebad567b4d0187
+73	4010	6775613028340747	CMakeFiles/middleware.dir/main.cpp.obj	90a424a01bfea2df
+7	68	0	C:/Projects/artistic_work/middleware/cmake-build-debug/middleware_autogen/mocs_compilation.cpp	eeebad567b4d0187
+69	141	6775612989669268	CMakeFiles/middleware.dir/middleware_autogen/mocs_compilation.cpp.obj	11caf3ece71c42b9
+3	99	0	CMakeFiles/middleware_autogen	eeebad567b4d0187
+3	99	0	middleware_autogen/mocs_compilation.cpp	eeebad567b4d0187
+3	99	0	C:/Projects/artistic_work/middleware/cmake-build-debug/CMakeFiles/middleware_autogen	eeebad567b4d0187
+3	99	0	C:/Projects/artistic_work/middleware/cmake-build-debug/middleware_autogen/mocs_compilation.cpp	eeebad567b4d0187
+100	170	6775613780614910	CMakeFiles/middleware.dir/middleware_autogen/mocs_compilation.cpp.obj	7f7dfa126bbb210e
+103	2015	6775613799026815	CMakeFiles/middleware.dir/main.cpp.obj	77d8ee872d657eb7

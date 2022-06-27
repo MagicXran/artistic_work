@@ -36,6 +36,7 @@ static T *getPtr(char *s) {
 
 
 int main(int argc , char **argv) {
+
     char struct_name[] = "CSU";
     getPtr<CSU>(struct_name)->it1 = 233;
     std::cout << getPtr<CSU>(struct_name)->it1 << std::endl;
