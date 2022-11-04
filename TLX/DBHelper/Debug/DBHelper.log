@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Projects\artistic_work\TLX\DBHelper\DBHelper.hpp(260,29): warning C4244: 'return': conversion from 'my_ulonglong' to 'int', possible loss of data
+  DBHelper.vcxproj -> C:\Projects\artistic_work\TLX\Debug\DBHelper.exe

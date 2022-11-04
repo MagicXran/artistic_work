@@ -1,0 +1,7 @@
+﻿  Reading Qt configuration (C:/Qt/Qt5.14.2/5.14.2/msvc2017_64/bin/qmake)
+  uic main_window.ui
+  moc main_window.h
+  main.cpp
+  main_window.cpp
+  moc_main_window.cpp
+  MWGUI.vcxproj -> C:\Projects\artistic_work\TLX\x64\Debug\MWGUI.exe
